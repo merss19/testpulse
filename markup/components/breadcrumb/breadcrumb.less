@@ -1,0 +1,35 @@
+.breadcrumb{
+	padding:15px 12px;
+
+	&__list{
+		margin: 0 -15px;
+	}
+
+	&__item{
+		float: left;
+		position: relative;
+		padding:0 15px;
+
+		&:after{
+			content: '';
+			.bg(@arrow);
+			display: block;
+			width: 19px;
+			height: 10px;
+			position: absolute;
+			top: 5px;
+			right: -12px;
+		}
+	}
+
+	&__link{
+		display: block;
+		text-decoration: none;
+		color: @color-light-grey;
+		font-size:12px;
+
+		&_active{
+			color: @color-grey;
+		}
+	}
+}

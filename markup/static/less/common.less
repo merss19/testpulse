@@ -1,0 +1,105 @@
+// Common styles of the project
+@import "_grid";
+
+html, body {
+    height: 100%;
+}
+
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+::selection{
+	background: #ddd;
+}
+img{
+	max-width: 100%;
+	height:auto;
+}
+
+.page {
+	background: #fff;
+	font-family: @RobotoRegular;
+	font-size: 14px;
+	color: @color-font;
+}
+.page-inner{
+	background: @color-page;
+}
+.t-center{
+	text-align: center;
+}
+.t-left{
+	text-align: left;
+}
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+
+.right{
+	float: right;
+}
+h1,h2,h3,h4{
+	margin:0;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+p{
+	margin:0;
+}
+a{
+	text-decoration: none;
+
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.content{
+	margin: 0 -12px;
+	padding-bottom: 62px;
+
+	&__header{
+		font-size: 24px;
+		margin-bottom: 10px;
+		padding: 0 12px;
+	}
+
+}
+
+.btn-action{
+	background-image: linear-gradient(to bottom, @color-add, @color-add-2);
+	background: @color-add;
+	height: 50px;
+	border-radius: 3px;
+	text-align: center;
+	font-size:16px;
+	font-family: @RobotoMedium;
+	line-height: 50px;
+	cursor: pointer;
+	color: #fff;
+	padding: 0 15px;
+
+	&:hover{
+		background-image: linear-gradient(to bottom, @color-add, @color-add);
+	}
+
+	&_type{
+		&_review{
+			font-size:14px;
+			height:45px;
+			line-height: 45px;
+			float: left;
+			padding: 0 22px;
+		}
+	}
+
+}

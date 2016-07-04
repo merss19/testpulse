@@ -1,0 +1,25 @@
+include ../components/head/head
+include ../components/header/header
+include ../components/filter-main/filter-main
+include ../components/medical/medical
+include ../components/blocks-promo/blocks-promo
+include ../components/footer/footer
+
+doctype html
+html(class="no-js", lang="ru")
+
+	head
+		+head(head.defaults)
+	body.page
+		| %=symbols=%
+		+header()
+		+filter-main()
+		+medical(medical)
+		+blocks-promo(blocks)
+		+footer(footer)
+
+		script(src='%=static=%js/separate-js/svg4everybody.min.js')
+		script svg4everybody();
+
+		//- Main scripts. You can replace it, but I recommend you to leave it here
+		script(src='%=static=%js/main%=hash=%%=min=%.js')

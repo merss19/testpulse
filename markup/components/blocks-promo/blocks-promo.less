@@ -1,0 +1,68 @@
+.blocks-promo{
+	background: @color-bg;
+	position: relative;
+
+	&__item{
+		&:first-child .privilege__item:first-child:before {
+			content: '';
+			display: block;
+			background: url('%=static=%assets/blocks-promo/tree.png') no-repeat;
+			height: 291px;
+			width: 320px;
+			position: absolute;
+			left: -190px;
+			top: 11px;
+			@media @desktop-992{
+				left: 0;
+			}
+		}
+	}
+}
+.privilege{
+	padding:57px 0;
+	border-bottom: 1px solid #cbdce4;
+
+	&__item {
+		display: inline-block;
+		width: 49.8%;
+		vertical-align: middle;
+		text-align: center;
+		position: relative;
+		@media @desktop-992{
+			width: 100%;
+		}
+
+
+	}
+
+	&__pic{
+		position: relative;
+		z-index:2;
+	}
+
+	&__title{
+		font-size: 24px;
+		font-weight:bold;
+		padding: 18px 0;
+		text-align: left;
+		position: relative;
+
+		&:before{
+			content: '';
+			display: block;
+			width:55px;
+			height:1px;
+			background: #c8dee9;
+			position: absolute;
+			bottom:0;
+			left:0;
+		}
+	}
+
+	&__desc {
+		line-height: 21px;
+		text-align: left;
+		padding:16px 0;
+		font-family: @RobotoLight;
+	}
+}

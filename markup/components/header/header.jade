@@ -1,0 +1,19 @@
+include ../logo/logo
+include ../contacts/contacts
+
+mixin header()
+	header.header
+		div.container.clearfix
+			div.header__logo.col-4
+				+logo()
+			div.header__info.col-8
+				div.info.clearfix
+					div.info__item.call-back
+						div.call-back__btn Обратный звонок
+					div.info__item
+						+contacts()
+					div.info__item.promo
+						div.promo__header 245
+						div.promo__desc
+							p Заявок
+							p за сегодня

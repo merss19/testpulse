@@ -1,0 +1,39 @@
+// Mixins.
+
+.nl() {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style: none;
+    list-style-position: outside;
+}
+
+.cf() {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .lt-ie8 & {
+        zoom: 1;
+    }
+}
+
+.blocks-justify() {
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+.padding-y(@top,@bottom){
+	padding-top:@top;
+	padding-bottom:@bottom;
+}
+.padding-x(@left,@right){
+	padding-left:@left;
+	padding-right:@right;
+}

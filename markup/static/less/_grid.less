@@ -1,0 +1,47 @@
+.clearfix:before,
+.clearfix:after{
+	display: table;
+	clear: both;
+	content: '';
+}
+.row{
+	margin:0 -10px;
+}
+.container {
+	max-width: @container-max-width;
+	min-width: @container-min-width;
+	padding: 0 15px;
+	margin: 0 auto;
+	width: 100%;
+	height:auto;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12{
+	position: relative;
+	min-height: 1px;
+	float: left;
+}
+
+.col-1 { width: 8.3%; }
+.col-2 { width: 16.6%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.2%; }
+.col-5 { width: 41.5%; }
+.col-6 { width: 49%; }
+.col-7 { width: 58.5%; }
+.col-8 { width: 66.4%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83%; }
+.col-11 { width: 91.5%; }
+.col-12 { width: 100%; }
+

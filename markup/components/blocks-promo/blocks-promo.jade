@@ -1,0 +1,18 @@
+mixin blocks-promo(data)
+	div.blocks-promo
+		div.container
+			each item in data
+				if item.picLeft
+					div.blocks-promo__item.privilege
+						div.privilege__item
+							img.privilege__pic(src="%=static=%img/assets/blocks-promo/#{item.img1}" alt="")
+						div.privilege__item
+							div.privilege__title=item.title
+							div.privilege__desc=item.desc
+				else
+					div.blocks-promo__item.privilege
+						div.privilege__item
+							div.privilege__title=item.title
+							div.privilege__desc=item.desc
+						div.privilege__item
+							img.privilege__pic(src="%=static=%img/assets/blocks-promo/#{item.img1}" alt="")

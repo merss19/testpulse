@@ -1,0 +1,91 @@
+mixin content-block(data)
+	div.content-block
+		div.content-block__inner
+			div.content-block__item
+				div.content-block__title Общие сведения об МРТ головногор мозга
+				div.content-block__desc Сервис ТестПульс является прекрасной возможностью расширить список пациентов вашего диагностического центра. Это выражается в ряде преимуществ:
+				div.content-block__pic
+					img.content-block__img(src="%=static=%img/assets/content-block/statica-1.png" alt="")
+				ul.content-block__list
+					each item in data
+						li.content-block__note=item
+			div.content-block__item.content-block__item_type_text
+				div.content-block__title Где пройти обследование
+				p.content-block__text Магнитно-резонансная томография – метод исследования, с помощью которого специалисты-радиологи получают точную информацию о состоянии органов и тканей человека без внутренних вмешательств. Аппаратом диагностируется организм с помощью магнитных полей,поэтому сама процедура полностью безопасна. В процессе диагностики аппарат делает серию снимков в разных проекциях, которые далее обрабатываются специалистом, и делается заключение.
+				div.content-block__pic
+					img.content-block__img(src="%=static=%img/assets/content-block/statica-2.png" alt="")
+				p.content-block__text Зачем проводится исследование. Данная диагностика считается наиболее информативным методом оценки состояния суставной, костно-мышечной и нервной систем человека. Чаще всего МРТ назначается для выявления нарушений опорно-двигательного аппарата, болезней головного мозга или повреждений спинного мозга. Процедура помогает выявить опухоли, нарушения в развитии или нарушения по причине травм. Использование контрастного вещества в разы повышает точность диагностики.
+			div.content-block__item.content-block__item_type_last-text
+				div.content-block__title Почему это важно
+				p.content-block__text Магнитно-резонансная томография – метод исследования, с помощью которого специалисты-радиологи получают точную информацию о состоянии органов и тканей человека без внутренних вмешательств. Аппаратом диагностируется организм с помощью магнитных полей, поэтому сама процедура полностью безопасна. В процессе диагностики аппарат делает серию снимков в разных проекциях, которые далее обрабатываются специалистом, и делается заключение.
+				p.content-block__text Магнитно-резонансная томография – метод исследования, с помощью которого специалисты-радиологи получают точную информацию о состоянии органов и тканей человека без внутренних вмешательств. Аппаратом диагностируется организм с помощью магнитных полей, поэтому сама процедура полностью безопасна. В процессе диагностики аппарат делает серию снимков в разных проекциях, которые далее обрабатываются специалистом, и делается заключение.
+			div.content-block__item.content-block__item_type_reviews
+				div.review
+					div.review__user.owl-carousel
+						div.review__user-item
+							div.review__name Людмила Яковлева
+							div.review__text Клиника Нейромонаха Иофана была основана в 1989 году.Еще моя бабушка ходила в эту клинику. В дальнейшем она очень быстро переквалифицировалась в МРТ клинику и проводит обследования в этой сфере. Последний раз, когда я ходил в нее - меня встретила грубая девушка на ресепшене - это был единственный минус клиники. В дальнейшем она переквалифицировалась
+							div.review__btn.clearfix
+								div.btn-action.btn-action_type_review Записаться в эту клинику
+						div.review__user-item
+							div.review__name Людмила Яковлева
+							div.review__text Клиника Нейромонаха Иофана была основана в 1989 году.Еще моя бабушка ходила в эту клинику. В дальнейшем она очень быстро переквалифицировалась в МРТ клинику и проводит обследования в этой сфере. Последний раз, когда я ходил в нее - меня встретила грубая девушка на ресепшене - это был единственный минус клиники. В дальнейшем она переквалифицировалась
+							div.review__btn
+								div.btn-action.btn-action_type_review  Записаться в эту клинику
+					div.review__nav.clearfix
+						div.review__nav-left
+						div.review__nav-right
+						div.review__pagination.clearfix
+							div.review__pagination-item 1
+								| /
+							div.review__pagination-item 10
+					div.clinic
+						div.clinic__top
+							div.clinic__logo
+								img.clinic__img(src="%=static=%img/assets/content-block/clinic.png" alt="")
+							div.clinic__desc Всемирная клиника Нейромонаха Иофана
+						div.clinic__bottom.rating
+							div.rating__item
+								div.rating__value.rating__value_type_number 8,5
+								div.rating__value.rating__value_type_desc Рейтинг пользователя
+							-var rating = [1,2,3,4,5,6,7,8,9,10]
+							-var edge = [['Качество','quality'],['Скорость','speed'],['Стоимость','price']]
+							each name in edge
+								div.rating__item
+									div.rating__value.rating__value_type_text=name[0]
+									div.rating__value
+										div.stars
+											div.stars__inner
+												each item in rating
+													input.stars__input(type="radio",value="#{item}",name="#{name[1]}",id=name[1] + "#{item}")
+													label.stars__label(for=name[1] + "#{item}")
+
+			div.content-block__item.content-block__item_type_articles
+				div.content-block__title Похожие статьи
+				div.content-block__articles.articles.clearfix
+					div.articles__item.col-4
+						div.articles__pic
+							img.articles__img(src="%=static=%img/assets/content-block/statica-5.png" alt="")
+						div.articles__head Почему мы лучше других медецинских порталов
+						div.articles__desc Нет, расуждения о невыданных лекартвах и адовых маленьких городах, да и не только маленьких не демагогия, а следствие. В столице пускают пыль в глаза, делая масштабные, дорогие и неадекватные прожеты, в то время как жизненно важные вещи - по фигу, главное - продем
+					div.articles__item.col-4
+						div.articles__pic
+							img.articles__img(src="%=static=%img/assets/content-block/statica-6.png" alt="")
+						div.articles__head Как скрыть свой истиный возраст с помошью макияжа
+						div.articles__desc Нет, расуждения о невыданных лекартвах и адовых маленьких городах, да и не только маленьких не демагогия, а следствие. В столице пускают пыль в глаза, делая масштабные, дорогие и неадекватные прожеты, в то время как жизненно важные вещи - по фигу, главное - продем
+					div.articles__item.col-4
+						div.articles__pic
+							img.articles__img(src="%=static=%img/assets/content-block/statica-7.png" alt="")
+						div.articles__head Лабораторные анализы как способ найти болезни
+						div.articles__desc Нет, расуждения о невыданных лекартвах и адовых маленьких городах, да и не только маленьких не демагогия, а следствие. В столице пускают пыль в глаза, делая масштабные, дорогие и неадекватные прожеты, в то время как жизненно важные вещи - по фигу, главное - продем
+
+			div.content-block__social.social
+				div.social.clearfix
+					div.social__item.col-3
+						div.social__icon.icon-vk
+					div.social__item.col-3
+						div.social__icon.icon-fb
+					div.social__item.col-3
+						div.social__icon.icon-ss
+					div.social__item.col-3
+						div.social__icon.icon-ss

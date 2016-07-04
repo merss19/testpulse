@@ -1,0 +1,27 @@
+include ../logo/logo
+include ../contacts/contacts
+
+mixin footer(data)
+	footer.footer
+		div.container.clearfix
+			div.footer__item
+				+logo()
+				div.footer__desc.clearfix Портал testpuls.ru – это прекрасный вариант найти лучший для вас диагностический центр и оформить заявку на обследование организма, не выходя из дома.
+			div.footer__item
+				ul.footer__list.clearfix
+					li.footer__list-item.col
+						a.footer__list-link(href="") О проекте
+					li.footer__list-item.col
+						a.footer__list-link(href="") Страховым агентам
+					li.footer__list-item.col
+						a.footer__list-link(href="") Блог
+					li.footer__list-item.col
+						a.footer__list-link(href="") Контакты
+					li.footer__list-item.col
+						a.footer__list-link(href="") Клиникам
+					li.footer__list-item.col
+						a.footer__list-link(href="") Пользовательское соглашение
+			div.footer__item
+				+contacts()
+				div.call-back.clearfix
+					div.call-back__btn Обратный звонок

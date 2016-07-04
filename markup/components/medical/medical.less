@@ -1,0 +1,139 @@
+.medical{
+	padding-top:53px;
+
+	&__item{
+		display: inline-block;
+		width: 32.3%;
+		vertical-align: top;
+		margin-bottom:70px;
+
+		@media @desktop-992{
+			width: 49%;
+		}
+
+		&:nth-child(3n+2){
+			padding-left:20px;
+
+			@media @desktop-1150{
+			padding-left:0;
+			}
+		}
+
+		&:nth-child(3n+3){
+			padding-left: 41px;
+
+			@media @desktop-1150{
+				padding-left:0;
+			}
+		}
+
+	}
+}
+.medical-block{
+	font-family:@RobotoLight;
+	margin-right: -27px;
+	
+	&__img{
+		float: left;
+	}
+
+	&__text{
+		float: left;
+		padding: 3px 0 0 12px;
+	}
+	
+	&__desc{
+		font-size:10px;
+		color: #676767;;
+	}
+
+	&__name{
+		font-family: @RobotoBold;
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	&__list{
+		line-height: 25px;
+		padding-top: 4px;
+		font-size: 12px;
+
+		&_hide{
+			overflow: hidden;
+			max-height:105px;
+		}
+
+	}
+	
+	&__link {
+		cursor: pointer;
+		color: @color-font;
+
+		&:hover {
+			color: @color-main;
+			text-decoration: none;
+		}
+	}
+	&__watch{
+		font-size: 12px;
+		color: @color-main;
+		font-family: @RobotoBold;
+		border-bottom: 1px dashed @color-main;
+		cursor: pointer;
+		position: relative;
+		font-weight:bold;
+		display: inline-block;
+		margin-top: 10px;
+
+
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 7px;
+			right: -11px;
+			width: 5px;
+			height: 5px;
+			border-right: 1px solid  @color-main;
+			border-bottom: 1px solid  @color-main;
+			transform: rotate(-45deg);
+		}
+
+		&_active{
+			&:after{
+				transform: rotate(45deg);
+			}
+		}
+
+		&:hover{
+			border-bottom: 1px solid @color-main;
+			text-decoration: none;
+		}
+	}
+}
+
+.dublex{
+	.bg(@dublexScan);
+}
+
+.kt{
+	.bg(@copy);
+}
+.mrt{
+	.bg(@mrt);
+}
+.rontgen{
+	 .bg(@rontgen);
+ }
+.usi{
+	.bg(@usi);
+}
+.diagnostics{
+	.bg(@diagnostics);
+}
+.electro{
+	 .bg(@electro);
+ }
+.endoscop{
+	.bg(@endoscop);
+}
