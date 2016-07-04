@@ -256,7 +256,7 @@
 		.bg-svg(@reviewLeft);
 		cursor: pointer;
 		position: absolute;
-		left: -107px;
+		left: -99px;
 		top: 10px;
 	}
 
@@ -264,7 +264,7 @@
 		.bg-svg(@reviewRight);
 		cursor: pointer;
 		position: absolute;
-		left: -18px;
+		left: -11px;
 		top: 10px;
 	}
 
@@ -273,9 +273,18 @@
 		left: -66px;
 		top: 12px;
 
+		&:before{
+			content: '/';
+			display: block;
+			position: absolute;
+			left:16px;
+
+		}
+
 		&-item{
 			letter-spacing: -1.5px;
 			display: inline-block;
+			margin-left: 8px;
 		}
 	}
 
