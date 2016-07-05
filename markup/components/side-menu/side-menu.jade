@@ -1,0 +1,9 @@
+mixin side-menu(data)
+	ul.side-menu
+		each item in data
+			li.side-menu__item
+				a.side-menu__link.arrow-left(role="button", data-toggle="collapse", href='#'+"#{item.id}")=item.name
+				ul.side-menu__sub-list.collapse(id="#{item.id}")
+					each val in item.sub
+						li.side-menu__sub-item
+							a.side-menu__sub-link=val

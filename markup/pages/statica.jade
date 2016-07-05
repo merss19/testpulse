@@ -2,8 +2,8 @@ include ../components/head/head
 include ../components/header/header
 include ../components/filter-main/filter-main
 include ../components/breadcrumb/breadcrumb
-include ../components/content-block/content-block
-include ../components/side-block/side-block
+include ../components/statica/statica
+include ../components/side-menu/side-menu
 include ../components/footer/footer
 
 doctype html
@@ -17,10 +17,14 @@ html(class="no-js", lang="ru")
 		+filter-main()
 		div.container
 			div.content.clearfix
-				+breadcrumb()
-				.h2.content__header МРТ шейного отдела
-				+content-block(content)
-				+side-block(menu)
+				+breadcrumb('statica')
+				h1.content__header МРТ шейного отдела
+				div.content-block
+					div.content-block__inner
+						+statica(content)
+				div.side-block
+					div.side-block__inner
+						+side-menu(menu)
 		+footer(footer)
 
 		script(src='%=static=%js/separate-js/svg4everybody.min.js')

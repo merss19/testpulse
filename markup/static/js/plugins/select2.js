@@ -3819,7 +3819,7 @@ S2.define('select2/data/maximumSelectionLength',[
         if (self.maximumSelectionLength > 0 &&
           count >= self.maximumSelectionLength) {
           self.trigger('results:message', {
-            message: 'maximumSelected',
+              message: 'maximumSelected',
             args: {
               maximum: self.maximumSelectionLength
             }
@@ -4489,7 +4489,7 @@ S2.define('select2/i18n/en',[],function () {
       return 'Loading more results…';
     },
     maximumSelected: function (args) {
-      var message = 'You can only select ' + args.maximum + ' item';
+      var message = 'Вы можете выбрать ' + args.maximum + ' услугу';
 
       if (args.maximum != 1) {
         message += 's';

@@ -24,6 +24,7 @@ img{
 	font-family: @RobotoRegular;
 	font-size: 14px;
 	color: @color-font;
+	min-width: 1100px;
 }
 .page-inner{
 	background: @color-page;
@@ -46,6 +47,7 @@ img{
 }
 h1,h2,h3,h4{
 	margin:0;
+	font-weight: normal;
 }
 ul{
 	list-style: none;
@@ -62,15 +64,31 @@ a{
 		text-decoration: none;
 	}
 }
+.main-link{
+	color: @color-main;
+	border-bottom: 1px dashed @color-main;
+	cursor: pointer;
+	transition:all 0.4s;
 
+	&:hover{
+		border-bottom: 1px solid @color-main;
+		text-decoration: none;
+	}
+}
 .content{
 	margin: 0 -12px;
 	padding-bottom: 62px;
 
 	&__header{
 		font-size: 24px;
-		margin-bottom: 10px;
-		padding: 0 12px;
+		margin: -7px 10px 10px 26px;
+		padding-bottom:10px;
+
+		&_type{
+			&_filter{
+				border-bottom:2px solid #d0d8e2;
+			}
+		}
 	}
 
 }
@@ -87,6 +105,7 @@ a{
 	cursor: pointer;
 	color: #fff;
 	padding: 0 15px;
+	transition:all 0.4s;
 
 	&:hover{
 		background-image: linear-gradient(to bottom, @color-add, @color-add);
@@ -99,6 +118,12 @@ a{
 			line-height: 45px;
 			float: left;
 			padding: 0 22px;
+		}
+
+		&_green{
+			background:#8ed119;
+			height:45px;
+			line-height:45px;
 		}
 	}
 

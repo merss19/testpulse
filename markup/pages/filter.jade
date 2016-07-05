@@ -1,0 +1,37 @@
+include ../components/head/head
+include ../components/header/header
+include ../components/filter-main/filter-main
+include ../components/breadcrumb/breadcrumb
+include ../components/filter-result/filter-result
+include ../components/side-menu/side-menu
+include ../components/cart-clinic/cart-clinic
+include ../components/side-filter/side-filter
+include ../components/footer/footer
+
+doctype html
+html(class="no-js", lang="ru")
+
+	head
+		+head(head.defaults)
+	body.page.page-inner
+		| %=symbols=%
+		+header()
+		+filter-main()
+		div.container
+			div.content.clearfix
+				+breadcrumb('filter')
+				h1.content__header.content__header_type_filter Сделать магнитно-резонансную томографию шейного отдела
+				+filter-result()
+				div.content-block
+					+cart-clinic(cart)
+				div.side-block
+					div.side-block__inner
+						+side-filter()
+						+side-menu(menu)
+		+footer(footer)
+
+		script(src='%=static=%js/separate-js/svg4everybody.min.js')
+		script svg4everybody();
+
+		//- Main scripts. You can replace it, but I recommend you to leave it here
+		script(src='%=static=%js/main%=hash=%%=min=%.js')

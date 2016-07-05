@@ -1,0 +1,181 @@
+.cart-clinic{
+	height: 360px;
+	border-radius: 3px;
+	background-color: #ffffff;
+	box-shadow: 0 1px 3px 0 rgba(107, 107, 107, 0.39);
+
+	&__body{
+		padding:24px 24px 24px 20px;
+	}
+	
+	&__side{
+		float: left;
+		text-align: center;
+		width: 25%;
+		padding-top:12px;
+	}
+
+	&__main{
+		float: left;
+		width: 75%;
+		padding-left: 22px;
+	}
+
+	&__logo{
+		width: 117px;
+		height: 117px;
+		border:  1px solid #d4d4d4;
+		border-radius:93px;
+		margin: auto;
+		line-height: 117px;
+	}
+
+	&__phone{
+		font-size: 18px;
+		font-family:RobotoMedium;
+		padding:20px 12px 8px 12px;
+	}
+
+	&__bottom{
+		box-shadow: 0 1px 3px 0 rgba(107, 107, 107, 0.39),inset 0 7px 19px -11px rgba(107,107,107,0.4);
+		padding:25px;
+	}
+
+	&__address{
+		text-align: right;
+	}
+
+	&__action{
+		padding: 0 16px;
+	}
+	
+}
+.metro{
+	padding:5px;
+
+	&__item{
+		float: left;
+		font-size:12px;
+	}
+
+	&__more{
+		float: left;
+		font-family:RobotoLight;
+		font-size:12px;
+		border-bottom: 1px dashed #979797;
+		color: #4c4c4c;
+		margin-left:17px;
+
+		&-amount{
+			display: inline-block;
+		}
+	}
+
+	&__logo{
+		background: #f9af00;
+		width:16px;
+		height:16px;
+		float: left;
+		border-radius:9px;
+		position: relative;
+		margin-right:7px;
+
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			.bg-svg(@metro);
+			top:4px;
+			left:3px;
+		}
+	}
+
+
+}
+.cart-address{
+	display: inline-block;
+	color: #1182c2;
+}
+
+.cart-block{
+	&__head{
+		font-size:18px;
+		padding:7px 0;
+	}
+}
+
+.tools{
+	padding:20px 0 14px 3px;
+
+	&__item{
+		width:20%;
+		float: left;
+		text-align: center;
+
+		&:first-child{
+			padding-right: 35px;
+		}
+
+		&:nth-child(4){
+			padding-left: 15px;
+		}
+
+		&:nth-child(5){
+			padding-left: 37px;
+		}
+	}
+
+	&__desc{
+		color: #a6acb1;
+		font-size:11px;
+	}
+}
+
+.service-block{
+	padding:7px 0;
+
+	&__list{
+		max-height: 90px;
+		overflow: hidden;
+	}
+
+	&__item{
+		padding:5.5px 0;
+	}
+
+	&__name{
+		float: left;
+	}
+
+	&__price{
+		float: right;
+		font-family:RobotoMedium;
+	}
+	
+	&__mark{
+		color: @color-main;
+		font-size:13px;
+		padding: 0 7px;
+	}
+
+	&__all{
+		padding-top:2px;
+		position: relative;
+		font-size:12px;
+		margin-left: 22px;
+		display: inline-block;
+		font-family:RobotoLight;
+		color: #1182c2;
+
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			top:7px;
+			left:-21px;
+			.bg-svg(@eye);
+			cursor: pointer;
+
+		}
+	}
+}

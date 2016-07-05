@@ -29,6 +29,7 @@
 	.select2-selection__rendered{
 		margin:20px 0 0 10px;
 	}
+
 }
 .edge{
 	font-family: @RobotoMedium;
@@ -108,6 +109,26 @@
 					color: #888;
 					z-index: 2;
 					font-size: 10px;
+				}
+
+				.select2-selection{
+					height:50px;
+				}
+
+				.select2-container--default .select2-selection--multiple .select2-selection__rendered{
+					margin-top:18px;
+				}
+
+				.select2-container--default .select2-selection--multiple .select2-selection__rendered li{
+					color: @color-font;
+					background-color: transparent;
+					border:none;
+					font-family: @RobotoLight;
+					margin-left: 9px;
+				}
+
+				.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+					display: none;
 				}
 			}
 

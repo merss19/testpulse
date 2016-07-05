@@ -1,0 +1,97 @@
+.filter-result{
+	padding:7px 11px 14px 30px;
+
+	&__search{
+		width: 73.1%;
+		float: left;
+	}
+
+	&__find{
+		font-size:13px;
+		padding-top: 3px;
+	}
+
+	&__clinics,
+	&__sum{
+		display: inline-block;
+		font-size:16px;
+		color: @color-main;
+	}
+	&__sort {
+		&-inner {
+			float: right;
+		}
+
+		&-text {
+			display: inline-block;
+			padding-right: 10px;
+			font-size: 13px;
+		}
+
+		&-btns {
+			display: inline-block;
+			margin-right: 10px;
+		}
+	}
+
+	&__btn{
+		display: inline-block;
+		width: 128px;
+		height: 30px;
+		border-radius: 100px;
+		color: @color-main;
+		text-align: center;
+		padding:5px;
+		cursor: pointer;
+		position: relative;
+		transition:all 0.4s;
+		padding-right: 18px;
+		border: 1px solid @color-main;
+
+		&:hover{
+			border: 1px solid @color-main;
+		}
+
+		&_active{
+			border: 1px solid @color-main;
+		}
+
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 12px;
+			right: 13px;
+			width: 5px;
+			height: 5px;
+			border-right: 1px solid @color-main;
+			border-bottom: 1px solid @color-main;
+			transform: rotate(45deg);
+		}
+
+		&_type{
+			&_up:after{
+				transform: rotate(225deg);
+			}
+
+			&_down{
+				padding-left: 0;
+				width: 108px;
+			}
+
+		}
+	}
+
+	&__price{
+		width:26.9%;
+		float: right;
+		font-size: 13px;
+		text-align: right;
+		padding-top: 4px;
+	}
+
+	&__sum{
+		display: inline-block;
+		font-size:16px;
+	}
+}
