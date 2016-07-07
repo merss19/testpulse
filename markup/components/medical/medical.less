@@ -57,12 +57,13 @@
 		line-height: 25px;
 		padding-top: 4px;
 		font-size: 12px;
+		overflow: hidden;
+		max-height:105px;
 
-		&_hide{
-			overflow: hidden;
-			max-height:105px;
+		&.toggle-active{
+			overflow: visible;
+			max-height:none;
 		}
-
 	}
 	
 	&__link {
@@ -96,7 +97,7 @@
 			transform: rotate(-45deg);
 		}
 
-		&_active{
+		&.toggle-active{
 			&:after{
 				transform: rotate(45deg);
 			}

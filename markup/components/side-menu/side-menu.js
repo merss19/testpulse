@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 $(document).ready(function () {
     $('.side-menu__link').collapse();
 
@@ -7,7 +7,8 @@ $(document).ready(function () {
             parent = $this.parent(),
             btn = parent.find('.side-menu__link');
 
-        btn.removeClass('arrow-left').addClass('arrow-down');
+        btn.addClass('active');
+
 
     })
     .on('hide.bs.collapse', function () {
@@ -15,9 +16,9 @@ $(document).ready(function () {
             parent = $this.parent(),
             btn = parent.find('.side-menu__link');
 
-        btn.removeClass('arrow-down').addClass('arrow-left');
+        btn.removeClass('active');
 
     });
 
-});
+});*/
 

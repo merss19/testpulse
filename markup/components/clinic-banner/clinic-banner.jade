@@ -1,0 +1,25 @@
+mixin clinic-banner()
+	div.clinic-banner
+		div.clinic-banner__body
+			div.clinic-banner__top.clearfix
+				div.clinic-banner__head МРТ (магнитно-резонансная томография) головного мозга
+				a.clinic-banner__params(href='') Дополнительные параметры
+			div.clinic-banner__boxes.clinic-box.clearfix
+				div.clinic-box__item.col-3
+					input.clinic-box__input#box-1(type = "checkbox")
+					label.clinic-box__label(for ="box-1") C контрастом
+				div.clinic-box__item.col-3
+					input.clinic-box__input#box-2(type = "checkbox")
+					label.clinic-box__label(for ="box-2") Акции ночью
+				div.clinic-box__item.col-3
+					input.clinic-box__input#box-3(type = "checkbox")
+					label.clinic-box__label(for ="box-3") Запись на флешку
+				div.clinic-box__item.col-3
+					input.clinic-box__input#box-4(type = "checkbox")
+					label.clinic-box__label(for ="box-4") Запись на CD
+		div.clinic-banner__bottom.clearfix
+			div.clinic-banner__action
+				button.btn-add Записаться на услугу
+			div.clinic-banner__price.clearfix
+				div.clinic-banner__price-text Цена за процедуру:
+				div.clinic-banner__price-value 2340 руб

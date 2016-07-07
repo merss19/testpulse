@@ -1,11 +1,54 @@
 mixin side-filter()
 	div.side-filter__item.side-filter__item_type_radio
-		div.side-filter__title Дополнительные услуги
+		a.side-filter__title(role="button", data-toggle="collapse", href="#additional") Дополнительные услуги
+		div.collapse(id="additional")
+			div.side-filter__box
+				input.side-filter__input#box-1(type = "checkbox")
+				label.side-filter__label(for ="box-1") C контрастом
+			div.side-filter__box
+				input.side-filter__input#box-2(type = "checkbox")
+				label.side-filter__label(for ="box-2") Акции ночью
 	div.side-filter__item.side-filter__item_type_radio
-		div.side-filter__title Запись на носители
+		a.side-filter__title(role="button", data-toggle="collapse", href="#record") Запись на носители
+		div.collapse(id="record")
+			div.side-filter__box
+				input.side-filter__input#box-3(type = "checkbox")
+				label.side-filter__label(for ="box-3") Да
 	div.side-filter__item.side-filter__item_type_select
-		div.side-filter__title Тип аппарата
+		a.side-filter__title(role="button", data-toggle="collapse", href="#type") Тип аппарата
+		div.collapse(id="type")
+			div.side-filter__box.side-filter__box_type_select
+				select.side-filter__select
+					option Открытый
+					option Закрытый
 	div.side-filter__item.side-filter__item_type_select
-		div.side-filter__title Мощность аппарата
+		a.side-filter__title(role="button", data-toggle="collapse", href="#power") Мощность аппарата
+		div.collapse(id="power")
+			div.side-filter__box.side-filter__box_type_select
+				select.side-filter__select
+					option 0,3 кВ
+					option 0,5 кВ
 	div.side-filter__item.side-filter__item_type_slider
-		div.side-filter__title Время записи
+		a.side-filter__title(role="button", data-toggle="collapse", href="#time-record") Время записи
+		div.collapse(id="time-record")
+			div.side-filter__from
+			div.side-filter__to
+			input(type="text" id="time" name="time" value="")
+	div.side-filter__item.side-filter__item_type_slider
+		a.side-filter__title(role="button", data-toggle="collapse", href="#vol") Обьем талии
+		div.collapse(id="vol")
+			div.side-filter__from
+			div.side-filter__to
+			input(type="text" id="volume" name="volume" value="")
+	div.side-filter__item.side-filter__item_type_slider
+		a.side-filter__title(role="button", data-toggle="collapse", href="#height-you") Ваш вес
+		div.collapse(id="height-you")
+			div.side-filter__from
+			div.side-filter__to
+			input(type="text" id="height" name="height" value="")
+	div.side-filter__item.side-filter__item_type_slider
+		a.side-filter__title(role="button", data-toggle="collapse", href="#price-r") Диапазон цен
+		div.collapse(id="price-r")
+			div.side-filter__from
+			div.side-filter__to
+			input(type="text" id="price-range" name="price-range" value="")

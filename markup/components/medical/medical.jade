@@ -9,7 +9,7 @@ mixin medical(data)
 							div.medical-block__text
 								div.medical-block__desc=item.desc
 								div.medical-block__name=item.name
-						ul.medical-block__list.medical-block__list_hide
+						ul.medical-block__list.toggle-list
 							each val in item.items
 								li.medical-block__item
 									a.medical-block__link(href="statica.html")=val

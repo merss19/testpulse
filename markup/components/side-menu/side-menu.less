@@ -7,6 +7,7 @@
 		box-shadow: @box-shadow;
 		padding: 14px 29px;
 		background: #fff;
+		margin-bottom: 18px;
 	}
 }
 .side-menu{
@@ -26,6 +27,22 @@
 		transition:all 0.4s;
 		text-decoration: none;
 		color: @color-font;
+
+		&:after{
+			content: '';
+			.bg-svg(@arrowLeft);
+			display: block;
+			position: absolute;
+			top: 16px;
+			right:-3px;
+		}
+
+		&.active{
+			&:after{
+				.bg-svg(@arrowDown);
+				top: 17px;
+			}
+		}
 
 		&:hover{
 			color: @color-marker;

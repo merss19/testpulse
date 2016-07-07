@@ -1,0 +1,17 @@
+include ../info-box/info-box
+
+mixin side-banner()
+	div.side-banner
+		div.side-banner__head Топ клиник
+		div.side-banner__wrap
+			ul.side-banner__list.owl-carousel
+				li.side-banner__item
+					+info-box()
+				li.side-banner__item
+					+info-box()
+			div.side-banner__nav
+				div.side-banner__nav-left.nav-left
+				div.side-banner__nav-right.nav-right
+				div.side-banner__pagination.clearfix
+					div.side-banner__pagination-item.owl-current 1
+					div.side-banner__pagination-item.owl-sum

@@ -9,31 +9,32 @@ mixin cart-clinic()
 					div.btn-action.btn-action_type_green Записаться
 			div.cart-clinic__main
 				div.cart-block
-					div.cart-block__head Медецинский центр ПАТЕРО КЛИНИК
+					a(href="detail.html").cart-block__head Медецинский центр
+						span.uppercase ПАТЕРО КЛИНИК
 					div.cart-block__tools.tools.clearfix
-						div.tools__item
+						button.tools__item(type="button", data-container="body", data-toggle="popover", data-placement="right", data-content="Ночью во многих клиниках москвы можно сделать процедуры гораздо дешевле за счет малого количества записей")
 							div.tools__pic
 								img.tools__img(src="%=static=%img/assets/cart-clinic/contrast.png" alt="")
 							div.tools__desc C контрастом
-						div.tools__item
+						button.tools__item(type="button", data-container="body", data-toggle="popover", data-placement="right", data-content="Ночью во многих клиниках москвы можно сделать процедуры гораздо дешевле за счет малого количества записей")
 							div.tools__pic
 								img.tools__img(src="%=static=%img/assets/cart-clinic/night.png" alt="")
 							div.tools__desc Акции ночью
-						div.tools__item
+						button.tools__item(type="button", data-container="body", data-toggle="popover", data-placement="right", data-content="Ночью во многих клиниках москвы можно сделать процедуры гораздо дешевле за счет малого количества записей")
 							div.tools__pic
 								img.tools__img(src="%=static=%img/assets/cart-clinic/open.png" alt="")
 							div.tools__desc Открытый
-						div.tools__item
+						button.tools__item(type="button", data-container="body", data-toggle="popover", data-placement="left", data-content="Ночью во многих клиниках москвы можно сделать процедуры гораздо дешевле за счет малого количества записей")
 							div.tools__pic
 								img.tools__img(src="%=static=%img/assets/cart-clinic/usb.png" alt="")
 							div.tools__desc Запись на USB
-						div.tools__item
+						button.tools__item(type="button", data-container="body", data-toggle="popover", data-placement="left", data-content="Ночью во многих клиниках москвы можно сделать процедуры гораздо дешевле за счет малого количества записей")
 							div.tools__pic
 								img.tools__img(src="%=static=%img/assets/cart-clinic/cd.png" alt="")
 							div.tools__desc Запись на CD
 
 					div.cart-block__list.service-block
-						ul.service-block__list
+						ul.service-block__list.toggle-list
 							li.service-block__item.clearfix
 								div.service-block__name Электрокардиография (ЭКГ)
 									span.service-block__mark с контрастом
@@ -57,11 +58,26 @@ mixin cart-clinic()
 						a.service-block__all.main-link Смотреть весь список услуг
 
 		div.cart-clinic__bottom.clearfix
-			div.cart-clinic__metro.col-4
+			div.cart-clinic__metro.col-6
 				div.metro.clearfix
-					div.metro__logo
-					div.metro__item Китай-город
-					div.metro__more Еще станции
-						div.metro__more-amount 4
-			div.cart-clinic__address.col-8
+					ul.metro__list.clearfix
+						li.metro__list-item
+							a.metro__link.clearfix
+								span.metro__logo
+								span.metro__item Китай-город
+						li.metro__list-item.hide
+							a.metro__link.clearfix
+								span.metro__logo
+								span.metro__item Китай-город
+						li.metro__list-item.hide
+							a.metro__link.clearfix
+								span.metro__logo
+								span.metro__item Китай-город
+						li.metro__list-item.hide
+							a.metro__link.clearfix
+								span.metro__logo
+								span.metro__item Китай-город
+					a.metro__more Еще станции
+						span.metro__more-amount 4
+			div.cart-clinic__address.col-6
 				a.cart-address.main-link г. Москва, Котельническая набережная д.32, к3

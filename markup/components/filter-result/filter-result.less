@@ -46,13 +46,13 @@
 		position: relative;
 		transition:all 0.4s;
 		padding-right: 18px;
-		border: 1px solid @color-main;
+		border: 1px solid transparent;
 
 		&:hover{
 			border: 1px solid @color-main;
 		}
 
-		&_active{
+		&.active{
 			border: 1px solid @color-main;
 		}
 
@@ -60,7 +60,7 @@
 			content: '';
 			display: block;
 			position: absolute;
-			top: 12px;
+			top: 14px;
 			right: 13px;
 			width: 5px;
 			height: 5px;
@@ -77,6 +77,10 @@
 			&_down{
 				padding-left: 0;
 				width: 108px;
+
+				&:after {
+					top: 12px;
+				}
 			}
 
 		}

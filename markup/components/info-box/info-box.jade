@@ -1,0 +1,8 @@
+include ../metro/metro
+
+mixin info-box()
+	div.info-box
+		a.info-box__title(href="filter.html") Медецинский центр Георгий Рогоносец
+		div.info-box__address г. Москва, Котельническая набережная д.32, к3
+		div.info-box__metro
+			+metro("Еще")

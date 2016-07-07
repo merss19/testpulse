@@ -4,6 +4,7 @@ include ../components/filter-main/filter-main
 include ../components/breadcrumb/breadcrumb
 include ../components/statica/statica
 include ../components/side-menu/side-menu
+include ../components/side-banner/side-banner
 include ../components/footer/footer
 
 doctype html
@@ -25,6 +26,7 @@ html(class="no-js", lang="ru")
 				div.side-block
 					div.side-block__inner
 						+side-menu(menu)
+					+side-banner()
 		+footer(footer)
 
 		script(src='%=static=%js/separate-js/svg4everybody.min.js')
