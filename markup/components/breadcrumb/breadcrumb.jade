@@ -1,18 +1,6 @@
-mixin breadcrumb(type)
-	-var statica = ['Главная','МРТ шейного отдела']
-	-var filter = ['Главная','МРТ шейного отдела','Выбор клиники']
-	-var detail = ['Главная','МРТ шейного отдела','Выбор клиники','Медецинский центр ПАТЕРО КЛИНИК']
+mixin breadcrumb(val)
 	div.breadcrumb
 		ul.breadcrumb__list.clearfix
-			if type ==="statica"
-				each item in statica
-					li.breadcrumb__item
-						a.breadcrumb__link(href="")=item
-			if type === "detail"
-				each item in detail
-					li.breadcrumb__item
-						a.breadcrumb__link(href="")=item
-			else
-				each item in filter
-					li.breadcrumb__item
-						a.breadcrumb__link(href="")=item
+			each item in val
+				li.breadcrumb__item
+					a.breadcrumb__link(href="")=item

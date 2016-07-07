@@ -1,0 +1,36 @@
+include ../components/head/head
+include ../components/header/header
+include ../components/filter-main/filter-main
+include ../components/breadcrumb/breadcrumb
+include ../components/to-clinic/to-clinic
+include ../components/side-menu/side-menu
+include ../components/side-banner/side-banner
+include ../components/footer/footer
+
+doctype html
+html(class="no-js", lang="ru")
+
+	head
+		+head(head.defaults)
+	body.page.page-inner
+		| %=symbols=%
+		+header()
+		+filter-main()
+		div.container
+			div.content.clearfix
+				+breadcrumb(['Главная','Клиникам'])
+				h1.content__header Клиникам и диагностическим центрам
+				div.content-block
+					div.content-block__inner
+						+to-clinic(content)
+				div.side-block
+					div.side-block__inner
+						+side-menu(menu)
+					+side-banner()
+		+footer(footer)
+
+		script(src='%=static=%js/separate-js/svg4everybody.min.js')
+		script svg4everybody();
+
+		//- Main scripts. You can replace it, but I recommend you to leave it here
+		script(src='%=static=%js/main%=hash=%%=min=%.js')

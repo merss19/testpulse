@@ -1,5 +1,6 @@
 include ../logo/logo
 include ../contacts/contacts
+include ../modal-callback/modal-callback
 
 mixin footer(data)
 	footer.footer
@@ -18,10 +19,11 @@ mixin footer(data)
 					li.footer__list-item.col
 						a.footer__list-link(href="") Контакты
 					li.footer__list-item.col
-						a.footer__list-link(href="") Клиникам
+						a.footer__list-link(href="to-clinic.html") Клиникам
 					li.footer__list-item.col
 						a.footer__list-link(href="") Пользовательское соглашение
 			div.footer__item
 				+contacts()
 				div.call-back.clearfix
-					div.call-back__btn Обратный звонок
+					div.call-back__btn(data-toggle="modal" data-target="#call-back-footer") Обратный звонок
+					+modal-callback('call-back-footer')

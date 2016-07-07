@@ -1,0 +1,19 @@
+mixin modal-callback(id)
+	div.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel",id="#{id}")
+		div.modal-dialog(role="document")
+			div.modal-callback.modal-content
+				div.modal-callback__head Обратный звонок
+				div.modal-callback__info.clearfix
+					label.modal-callback__label.col-12(for = "callback-name") Ваше имя
+					div.modal-callback__wrap.col-12
+						input.modal-callback__input#callback-name(type="text",placeholder="Ваше имя")
+					div.modal-callback__wrap.col-12
+						input.modal-callback__input(type="tel",placeholder="Ваш телефон")
+				div.modal-callback__time.clearfix
+					label.modal-callback__label.col-12(for = "callback-name") Время звонка
+					div.modal-callback__wrap.col-6
+						input.modal-callback__input.modal-callback__input_type_time#callback-name(type="time")
+					div.modal-callback__wrap.modal-callback__wrap_type_dash.col-6
+						input.modal-callback__input.modal-callback__input_type_time#callback-name(type="time")
+				div.modal-callback__action
+					div.btn-action.btn-action_type_green Заказать обратный звонок

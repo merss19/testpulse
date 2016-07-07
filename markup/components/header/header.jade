@@ -1,6 +1,6 @@
 include ../logo/logo
 include ../contacts/contacts
-
+include ../modal-callback/modal-callback
 mixin header()
 	header.header
 		div.container.clearfix
@@ -9,7 +9,8 @@ mixin header()
 			div.header__info.col-8
 				div.info.clearfix
 					div.info__item.call-back
-						div.call-back__btn Обратный звонок
+						button.call-back__btn(data-toggle="modal" data-target="#call-back") Обратный звонок
+						+modal-callback('call-back')
 					div.info__item
 						+contacts()
 					div.info__item.promo

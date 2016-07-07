@@ -244,5 +244,10 @@ $(document).ready(function () {
         $this.addClass('hide');
     });
 
+    //inputmask
+    $('.call-back-form__input[type="tel"], .modal-callback__input').inputmask("+9-(999)-999-99-99");  //static mask
+    //$(selector).inputmask({"mask": "(999) 999-9999"}); //specifying options
+    //$(selector).inputmask("9-a{1,3}9{1,3}"); //mask with dynamic syntax
+
 });
 

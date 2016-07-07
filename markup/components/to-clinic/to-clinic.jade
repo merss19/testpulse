@@ -1,0 +1,23 @@
+include ../call-back/call-back
+
+mixin to-clinic(data)
+	div.to-clinic
+		div.statica
+			div.statica__item
+				div.statica__desc Сервис ТестПульс является прекрасной возможностью расширить список пациентов вашего диагностического центра. Это выражается в ряде преимуществ:
+				div.statica__pic
+					img.statica__img(src="%=static=%img/assets/statica/statica-1.png" alt="")
+				ul.statica__list.list-option
+					each item in data
+						li.list-option__note=item
+			+call-back()
+			div.statica__social.social
+				div.social.clearfix
+					div.social__item.col-3
+						div.social__icon.icon-vk
+					div.social__item.col-3
+						div.social__icon.icon-fb
+					div.social__item.col-3
+						div.social__icon.icon-ss
+					div.social__item.col-3
+						div.social__icon.icon-ss

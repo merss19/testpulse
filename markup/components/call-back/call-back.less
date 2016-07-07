@@ -1,0 +1,74 @@
+.callback{
+	padding: 22px 0;
+
+	&__head{
+		font-size:20px;
+		color: @color-main;
+	}
+
+	&__contact{
+		padding: 25px 0 20px 0;
+	}
+
+	&__phone,
+	&__mail{
+		float: left;
+		padding: 0 38px;
+		position: relative;
+		font-size:15px;
+
+		&:before{
+			content: '';
+			display: block;
+			.bg-svg(@phone);
+			position: absolute;
+			top:0;
+			left:0;
+		}
+	}
+
+	&__mail{
+		margin-left: 24px;
+
+		&:before{
+			.bg-svg(@mail);
+		}
+	}
+}
+.call-back-form{
+	margin:0 -14px;
+
+	&__input{
+		padding: 11px 19px;
+		border:2px solid #d8dfe7;
+		border-radius: 3px;
+		width:100%;
+
+		&[type="tel"]{
+			letter-spacing: 2px;
+		}
+	}
+
+	&__wrap{
+		padding:5px 8px 5px 14px;
+
+		&:nth-child(3){
+			padding-top: 12px
+		}
+	}
+
+	&__textarea{
+		padding:15px 19px;
+		border:2px solid #d8dfe7;
+		border-radius: 3px;
+		width:100%;
+		height:134px;
+	}
+
+	&__btn{
+		padding: 14px 13px;
+		float: left;
+		border: none;
+		width: 186px;
+	}
+}
