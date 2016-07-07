@@ -233,7 +233,7 @@ $(document).ready(function () {
         container:'.tools'
     });
 
-        //cart
+        //metro
 
     $('.metro__more').on('click', function(){
         var $this = $(this),

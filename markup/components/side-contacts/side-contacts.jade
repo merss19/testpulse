@@ -1,0 +1,10 @@
+include ../metro/metro
+
+mixin side-contacts()
+	div.side-contacts
+		a.side-contacts__map
+			img(src="%=static=%img/assets/side-contacts/side-map.png" alt="")
+		div.side-contacts__box
+			div.side-contacts__link
+				a.main-link г. Москва, Котельническая набережная имени ломоносова д.32, к3
+			+metro('Еще станции')

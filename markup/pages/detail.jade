@@ -6,6 +6,8 @@ include ../components/side-menu/side-menu
 include ../components/clinic-info/clinic-info
 include ../components/clinic-banner/clinic-banner
 include ../components/clinic-price/clinic-price
+include ../components/clinic-line/clinic-line
+include ../components/side-contacts/side-contacts
 include ../components/footer/footer
 
 doctype html
@@ -26,8 +28,10 @@ html(class="no-js", lang="ru")
 					+clinic-price()
 				div.side-block
 					div.side-block__inner
+						+side-contacts()
 					div.side-block__inner
 						+side-menu(menu)
+		+clinic-line()
 		+footer(footer)
 
 		script(src='%=static=%js/separate-js/svg4everybody.min.js')

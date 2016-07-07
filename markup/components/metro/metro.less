@@ -1,121 +1,59 @@
+.metro{
+	padding:5px;
 
-.clinic-banner{
-	background: #fff;
-	margin:11px 0;
-
-	&__body{
-		padding: 24px 30px 9px 30px;
-		box-shadow: inset 0 -6px 16px -10px rgba(107, 107, 107, 0.4);
-	}
-
-
-	&__head{
-		color: @color-main;
-		font-size:18px;
+	&__list{
 		float: left;
 	}
 
-	&__params{
-		color: #a2a2a2;
-		font-size:13px;
-		float: right;
-		padding-top: 3px;
-		border-bottom: 1px dashed #a2a2a2;
-		cursor: pointer;
-		display: inline-block;
-
-		&:hover{
-			border-bottom: 1px solid #a2a2a2;
-		}
-	}
-
-	&__boxes{
-		padding: 23px 0;
-	}
-
-	&__bottom{
-		padding: 24px 30px;
-	}
-
-	&__action{
+	&__list-item{
 		float: left;
+		padding: 0 9px 8px 0;
 	}
 
-	&__price{
-		float: right;
-		padding-top: 6px;
-
-		&-text{
-			color: #727272;
-			float: left;
-			padding: 5px 41px 0 0;
-		}
-
-		&-value{
-			font-size: 18px;
-			position: relative;
-			float: left;
-
-			&:before{
-				content: "";
-				display: block;
-				.bg-svg(@label);
-				position: absolute;
-				top: 5px;
-				left: -25px;
-			}
-		}
+	&__link{
+		display: block;
+		color: @color-font;
+		font-size:12px;
 	}
-}
-
-.clinic-box{
 
 	&__item{
-		&:nth-child(2){
-			padding-left:13px;
-		}
+		float: left;
+		font-size:12px;
+	}
 
-		&:nth-child(3){
-			padding-left:27px;
-		}
+	&__more{
+		float: left;
+		font-family:RobotoLight;
+		font-size:12px;
+		border-bottom: 1px dashed #979797;
+		color: #4c4c4c;
+		margin-left:10px;
+		cursor: pointer;
 
-		&:nth-child(4){
-			padding-left:69px;
+		&-amount{
+			display: inline-block;
+			margin-left: 5px;
 		}
 	}
-	&__input{
-		display: none;
 
-		& + label{
-			cursor: pointer;
-			position: relative;
-			padding-left: 34px;
-			color: #787878;
-			font-size:13px;
-			padding-top: 1px;
+	&__logo{
+		background: #f9af00;
+		width:16px;
+		height:16px;
+		float: left;
+		border-radius:9px;
+		position: relative;
+		margin-right:7px;
 
-			&:before{
-				content: "";
-				display: inline-block;
-				height: 22px;
-				width: 22px;
-				border: 1px solid #d8d8d8;
-				border-radius: 4px;
-				box-shadow: 0 2px 1px 0 rgba(100, 100, 100, 0.06);
-				position: absolute;
-				top:0;
-				left:0;
-			}
-		}
-
-		&:checked + label:before{
-			border: solid 1px #7dc855;
-			box-shadow: 0 2px 6px 0 rgba(125, 200, 84, 0.4);
-			.bg-svg(@check);
-			background-position: 0px -649px;
-			height: 20px;
-			width: 20px;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			.bg-svg(@metro);
+			top:4px;
+			left:3px;
 		}
 	}
+
 
 }
