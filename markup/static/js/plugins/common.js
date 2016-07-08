@@ -24,6 +24,14 @@ $(document).ready(function () {
                 sumN.text(items.length);
 
 
+            },
+            beforeMove:function(){
+                var list = carousel.find('.metro__list');
+
+                if(list.length){
+                    list.addClass('metro-hide');
+                }
+
             }
         });
 
@@ -229,25 +237,44 @@ $(document).ready(function () {
 
     });
 
+
+    //popover
     $('.tools__item').popover({
         container:'.tools'
     });
 
         //metro
+    function metro(){
+        var text,
+            templ,
+            num;
 
-    $('.metro__more').on('click', function(){
-        var $this = $(this),
-            parent = $this.parent(),
-            item = parent.find('.metro__list-item');
+        $('.metro__more').on('click', function(){
+            var $this = $(this),
+                parent = $this.parent(),
+                list = parent.find('.metro__list'),
+                item = parent.find('.metro__list-item');
 
-        item.removeClass('hide');
-        $this.addClass('hide');
-    });
+
+            list.toggleClass('metro-hide');
+
+            if (!list.hasClass('metro-hide')) {
+                    text = $this.text().replace(/\d/g, '');
+                    num = $this.find('.metro__more-amount').text();
+                    templ = text + '<span class="metro__more-amount">'+num+'</span>';
+
+                $this.text('Свернуть');
+            } else {
+
+                $this.html(templ);
+            }
+        });
+    }
+    metro();
+
 
     //inputmask
-    $('.call-back-form__input[type="tel"], .modal-callback__input').inputmask("+9-(999)-999-99-99");  //static mask
-    //$(selector).inputmask({"mask": "(999) 999-9999"}); //specifying options
-    //$(selector).inputmask("9-a{1,3}9{1,3}"); //mask with dynamic syntax
+    $('.call-back-form__input[type="tel"], .modal-callback__input_type_phone').inputmask("+9-(999)-999-99-99");  //static mask
 
 });
 

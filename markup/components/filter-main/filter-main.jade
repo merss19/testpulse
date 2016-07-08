@@ -7,7 +7,7 @@ mixin filter-main(page)
 				div.filter__box.filter__box_type_service.col-5
 					div.filter__inner
 						label(for="id_label_multiple")
-							select.js-example-basic-multiple.js-states.form-control#id_label_multiple(multiple="multiple")
+							select(multiple="multiple")
 								option МРТ Головного мозга
 								option Флюрография
 								option УЗИ
@@ -25,9 +25,20 @@ mixin filter-main(page)
 								option УЗИ
 				div.filter__box.filter__box_type_location.col-5
 					div.filter__inner
+						span.filter__res 10
+						span.filter__notice Выбрано
+							span.filter__notice-value 10
+							|станций метро
 						select.filter__select
-							option Выбрано 10 станций метро
-							option Выбрано 10 станций метро
+							option Китай-город
+							option Библиотека им. Ленина
+							option Полянка
+							option Площадь революции
+							option Аннино
+							option Китай-город
+							option Митино
+							option Динамо
+							option Китай-город
 				div.filter__btn.col-2
 					button.btn-action Найти клинику
 			if page === 'index'

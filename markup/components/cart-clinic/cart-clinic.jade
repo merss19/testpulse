@@ -1,3 +1,4 @@
+include ../metro/metro
 mixin cart-clinic()
 	div.cart-clinic
 		div.cart-clinic__body.clearfix
@@ -59,25 +60,6 @@ mixin cart-clinic()
 
 		div.cart-clinic__bottom.clearfix
 			div.cart-clinic__metro.col-6
-				div.metro.clearfix
-					ul.metro__list.clearfix
-						li.metro__list-item
-							a.metro__link.clearfix
-								span.metro__logo
-								span.metro__item Китай-город
-						li.metro__list-item.hide
-							a.metro__link.clearfix
-								span.metro__logo
-								span.metro__item Китай-город
-						li.metro__list-item.hide
-							a.metro__link.clearfix
-								span.metro__logo
-								span.metro__item Китай-город
-						li.metro__list-item.hide
-							a.metro__link.clearfix
-								span.metro__logo
-								span.metro__item Китай-город
-					a.metro__more Еще станции
-						span.metro__more-amount 4
+				+metro("Еще станции")
 			div.cart-clinic__address.col-6
 				a.cart-address.main-link г. Москва, Котельническая набережная д.32, к3

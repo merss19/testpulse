@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>default title</title>
+        <meta content="" name="description" />
+        <meta content="" name="keywords" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta content="telephone=no" name="format-detection" />
+        <meta name="HandheldFriendly" content="true" />
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <meta property="og:title" content="default title" />
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
+        <meta property="twitter:description" content="" />
+        <link rel="image_src" href="" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="static/css/separate-css/select2.min.css" />
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+    </head>
+
+    <body class="page">
+        <header class="header">
+            <div class="container clearfix">
+                <div class="header__logo col-4">
+                    <a href="index.html" class="logo clearfix">
+                        <div class="logo__img"></div>
+                        <div class="logo__text">
+                            <div class="logo__title">TESTPULS.RU</div>
+                            <h1 class="logo__desc">Диагностические центры</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__info col-8">
+                    <div class="info clearfix">
+                        <div class="info__item call-back">
+                            <button data-toggle="modal" data-target="#call-back" class="call-back__btn">Обратный звонок</button>
+                            <div tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="call-back" class="modal fade">
+                                <div role="document" class="modal-dialog">
+                                    <div class="modal-callback modal-content">
+                                        <div class="modal-callback__head">Обратный звонок</div>
+                                        <div class="modal-callback__info clearfix">
+                                            <label for="callback-name" class="modal-callback__label col-12">Ваше имя</label>
+                                            <div class="modal-callback__wrap col-12">
+                                                <input id="callback-name" type="text" placeholder="Ваше имя" class="modal-callback__input" />
+                                            </div>
+                                            <div class="modal-callback__wrap col-12">
+                                                <input type="tel" placeholder="Ваш телефон" class="modal-callback__input" />
+                                            </div>
+                                        </div>
+                                        <div class="modal-callback__time clearfix">
+                                            <label for="callback-name" class="modal-callback__label col-12">Время звонка</label>
+                                            <div class="modal-callback__wrap col-6">
+                                                <input id="callback-name" type="time" class="modal-callback__input modal-callback__input_type_time" />
+                                            </div>
+                                            <div class="modal-callback__wrap modal-callback__wrap_type_dash col-6">
+                                                <input id="callback-name" type="time" class="modal-callback__input modal-callback__input_type_time" />
+                                            </div>
+                                        </div>
+                                        <div class="modal-callback__action">
+                                            <div class="btn-action btn-action_type_green">Заказать обратный звонок</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <div class="contacts">
+                                <div class="contacts__mail">Info@testpuls.ru</div>
+                                <div class="contacts__phone">+7 (499) 705-30-40</div>
+                            </div>
+                        </div>
+                        <div class="info__item promo">
+                            <div class="promo__header">245</div>
+                            <div class="promo__desc">
+                                <p>Заявок</p>
+                                <p>за сегодня</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="filter-main">
+            <div class="container">
+                <h2 class="filter-main__title">Найдите лучший <br/>диагностический центр рядом с вами</h2>
+                <div class="filter-main__search filter clearfix">
+                    <div class="filter__box filter__box_type_service col-5">
+                        <div class="filter__inner">
+                            <label for="id_label_multiple">
+                                <select multiple="multiple">
+                                    <option>МРТ Головного мозга</option>
+                                    <option>Флюрография</option>
+                                    <option>УЗИ</option>
+                                    <option>МРТ Головного мозга</option>
+                                    <option>Флюрография</option>
+                                    <option>УЗИ</option>
+                                    <option>МРТ Головного мозга</option>
+                                    <option>Флюрография</option>
+                                    <option>УЗИ</option>
+                                    <option>МРТ Головного мозга</option>
+                                    <option>Флюрография</option>
+                                    <option>УЗИ</option>
+                                    <option>МРТ Головного мозга</option>
+                                    <option>Флюрография</option>
+                                    <option>УЗИ</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter__box filter__box_type_location col-5">
+                        <div class="filter__inner">
+                            <select class="filter__select">
+                                <option>Китай-город</option>
+                                <option>Библиотека им. Ленина</option>
+                                <option>Китай-город</option>
+                                <option>Китай-город</option>
+                                <option>Библиотека им. Ленина</option>
+                                <option>Китай-город</option>
+                                <option>Китай-город</option>
+                                <option>Библиотека им. Ленина</option>
+                                <option>Китай-город</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter__btn col-2">
+                        <button class="btn-action">Найти клинику</button>
+                    </div>
+                </div>
+                <div class="filter-main__edge edge clearfix">
+                    <div class="edge__item col-3">
+                        <div class="edge__icon icon-booking"></div>
+                        <div class="edge__text">Бесплатная
+                            <br/>запись</div>
+                    </div>
+                    <div class="edge__item col-3">
+                        <div class="edge__icon icon-diagnostic"></div>
+                        <div class="edge__text">264 диагностических
+                            <br/>центра</div>
+                    </div>
+                    <div class="edge__item col-3">
+                        <div class="edge__text">Единый
+                            <br/>центр записи</div>
+                        <div class="edge__icon icon-center"></div>
+                    </div>
+                    <div class="edge__item col-3">
+                        <div class="edge__text">Лучшие
+                            <br/>специалисты</div>
+                        <div class="edge__icon icon-best"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="medical">
+            <div class="container clearfix">
+                <div class="medical__item">
+                    <div class="medical-block">
+                        <div class="medical-block__top clearfix">
+                            <div class="medical-block__img dublex"></div>
+                            <div class="medical-block__text">
+                                <div class="medical-block__desc">Более 504 клиник Москвы</div>
+                                <div class="medical-block__name">Дупликсное сканирование</div>
+                            </div>
+                        </div>
+                        <ul class="medical-block__list toggle-list">
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Дуплексное сканирование артерий головы</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Транскраниальное дуплексное сканирование</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Дуплексное сканирование брюшной аорты</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Дуплексное сканирование сосудов почек</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Дуплексное сканирование артерий головы</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Транскраниальное дуплексное сканирование</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Дуплексное сканирование брюшной аорты</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Дуплексное сканирование сосудов почек</a>
+                            </li>
+                        </ul><a class="medical-block__watch main-link">Смотреть  все</a>
+                    </div>
+                </div>
+                <div class="medical__item">
+                    <div class="medical-block">
+                        <div class="medical-block__top clearfix">
+                            <div class="medical-block__img kt"></div>
+                            <div class="medical-block__text">
+                                <div class="medical-block__desc">Более 42 клиник Москвы</div>
+                                <div class="medical-block__name">КТ (Компьютерная томография)</div>
+                            </div>
+                        </div>
+                        <ul class="medical-block__list toggle-list">
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Компьютерная томография мозга</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Компьютерная томография легких</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Компьютерная томография брюшной полости</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Компьютерная томография позвоночника</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Компьютерная томография мозга</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Компьютерная томография легких</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Компьютерная томография брюшной полости</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Компьютерная томография позвоночника</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Компьютерная томография мозга</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Компьютерная томография легких</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Компьютерная томография брюшной полости</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Компьютерная томография позвоночника</a>
+                            </li>
+                        </ul><a class="medical-block__watch main-link">Смотреть  все</a>
+                    </div>
+                </div>
+                <div class="medical__item">
+                    <div class="medical-block">
+                        <div class="medical-block__top clearfix">
+                            <div class="medical-block__img mrt"></div>
+                            <div class="medical-block__text">
+                                <div class="medical-block__desc">Более 231 клиник Москвы</div>
+                                <div class="medical-block__name">МРТ (магнитно-резонансная томография)</div>
+                            </div>
+                        </div>
+                        <ul class="medical-block__list toggle-list">
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ шейного отдела</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ головного мозга</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ гипофиза</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ турецкого седла</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ шейного отдела</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ головного мозга</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ гипофиза</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ турецкого седла</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ шейного отдела</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ головного мозга</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ гипофиза</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ турецкого седла</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ шейного отдела</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ головного мозга</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ гипофиза</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">МРТ турецкого седла</a>
+                            </li>
+                        </ul><a class="medical-block__watch main-link">Смотреть  все</a>
+                    </div>
+                </div>
+                <div class="medical__item">
+                    <div class="medical-block">
+                        <div class="medical-block__top clearfix">
+                            <div class="medical-block__img rontgen"></div>
+                            <div class="medical-block__text">
+                                <div class="medical-block__desc">Более 74 клиник Москвы</div>
+                                <div class="medical-block__name">Рентген (Ренгенография)</div>
+                            </div>
+                        </div>
+                        <ul class="medical-block__list toggle-list">
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Рентген черепа</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Рентген желудка и 12-перстной кишки</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Рентген зуба</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Рентген легких</a>
+                            </li>
+                        </ul><a class="medical-block__watch main-link">Смотреть  все</a>
+                    </div>
+                </div>
+                <div class="medical__item">
+                    <div class="medical-block">
+                        <div class="medical-block__top clearfix">
+                            <div class="medical-block__img usi"></div>
+                            <div class="medical-block__text">
+                                <div class="medical-block__desc">Более 342 клиник Москвы</div>
+                                <div class="medical-block__name">Узи (Ультрозвуковое исследование)</div>
+                            </div>
+                        </div>
+                        <ul class="medical-block__list toggle-list">
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">УЗИ для беременных</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">УЗИ органов брюшной полости</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">УЗИ органов малого таза</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">УЗИ предстательной железы</a>
+                            </li>
+                        </ul><a class="medical-block__watch main-link">Смотреть  все</a>
+                    </div>
+                </div>
+                <div class="medical__item">
+                    <div class="medical-block">
+                        <div class="medical-block__top clearfix">
+                            <div class="medical-block__img diagnostics"></div>
+                            <div class="medical-block__text">
+                                <div class="medical-block__desc">Более 253 клиник Москвы</div>
+                                <div class="medical-block__name">Функциональная диагностика</div>
+                            </div>
+                        </div>
+                        <ul class="medical-block__list toggle-list">
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Электрокардиография (ЭКГ)</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Холтеровское (суточное) мониторирование</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">ЭКГ Суточное мониторирование артериального давления</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Проба с дозированной физической нагрузкой </a>
+                            </li>
+                        </ul><a class="medical-block__watch main-link">Смотреть  все</a>
+                    </div>
+                </div>
+                <div class="medical__item">
+                    <div class="medical-block">
+                        <div class="medical-block__top clearfix">
+                            <div class="medical-block__img electro"></div>
+                            <div class="medical-block__text">
+                                <div class="medical-block__desc">Более 231 клиник Москвы</div>
+                                <div class="medical-block__name">Электронейромиография (ЭНМГ)</div>
+                            </div>
+                        </div>
+                        <ul class="medical-block__list toggle-list">
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">ЭНМГ конечностей</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">ЭНМГ лицевого нерва</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">ЭНМГ исследование нервно-мышечной передачи</a>
+                            </li>
+                        </ul><a class="medical-block__watch main-link">Смотреть  все</a>
+                    </div>
+                </div>
+                <div class="medical__item">
+                    <div class="medical-block">
+                        <div class="medical-block__top clearfix">
+                            <div class="medical-block__img endoscop"></div>
+                            <div class="medical-block__text">
+                                <div class="medical-block__desc">Более 231 клиник Москвы</div>
+                                <div class="medical-block__name">Эндоскопия</div>
+                            </div>
+                        </div>
+                        <ul class="medical-block__list toggle-list">
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Бронхоскопия</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Эзофагоскопия</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Гастроскопия</a>
+                            </li>
+                            <li class="medical-block__item"><a href="statica.html" class="medical-block__link">Интестиноскопия</a>
+                            </li>
+                        </ul><a class="medical-block__watch main-link">Смотреть  все</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blocks-promo">
+            <div class="container">
+                <div class="blocks-promo__item privilege">
+                    <div class="privilege__item">
+                        <img src="static/img/assets/blocks-promo/list.png" alt="" class="privilege__pic" />
+                    </div>
+                    <div class="privilege__item">
+                        <div class="privilege__title">Лучшие центры диагностики</div>
+                        <div class="privilege__desc">Портал TestPuls.ru — это уникальный каталог, который соответствует всем требованиям по быстрому поиску лучших диагностических центров Москвы. Это более 150 профильных клиник с высоким качеством обслуживания и расположением по всей
+                            территории города.</div>
+                    </div>
+                </div>
+                <div class="blocks-promo__item privilege">
+                    <div class="privilege__item">
+                        <div class="privilege__title">Каталог видов диагностики</div>
+                        <div class="privilege__desc">Портал TestPuls.ru — это более 80 видов диагностики органов человека, проводимых различными методиками. Удобный рубрикатор поможет быстро сориентироваться и выбрать необходимую услугу, вплоть до поиска по станции метро или названию
+                            клиники.</div>
+                    </div>
+                    <div class="privilege__item">
+                        <img src="static/img/assets/blocks-promo/map.png" alt="" class="privilege__pic" />
+                    </div>
+                </div>
+                <div class="blocks-promo__item privilege">
+                    <div class="privilege__item">
+                        <img src="static/img/assets/blocks-promo/cup.png" alt="" class="privilege__pic" />
+                    </div>
+                    <div class="privilege__item">
+                        <div class="privilege__title">Простота и удобство</div>
+                        <div class="privilege__desc">Портал TestPuls.ru — это удобная запись на необходимый вид диагностики в выбранной вами клинике в нужное время непосредственно у нас на сайте.Это огромные преимущества, поскольку вам больше не нужно искать координаты центров диагностики
+                            по всему Интернету и идти на процедуру «когда скажут».</div>
+                    </div>
+                </div>
+                <div class="blocks-promo__item privilege">
+                    <div class="privilege__item">
+                        <div class="privilege__title">Качественный сервис</div>
+                        <div class="privilege__desc">Портал TestPuls.ru — это качественное обслуживание сотрудниками сайта каждого клиента, начиная от консультации, заканчивая напоминанием о визите. Постоянное развитие и совершенствование интернет-сервиса, позволяющее предоставить
+                            вам еще больше необходимой информации и услуг.</div>
+                    </div>
+                    <div class="privilege__item">
+                        <img src="static/img/assets/blocks-promo/tablet.png" alt="" class="privilege__pic" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container clearfix">
+                <div class="footer__item">
+                    <a href="index.html" class="logo clearfix">
+                        <div class="logo__img"></div>
+                        <div class="logo__text">
+                            <div class="logo__title">TESTPULS.RU</div>
+                            <h1 class="logo__desc">Диагностические центры</h1>
+                        </div>
+                    </a>
+                    <div class="footer__desc clearfix">Портал testpuls.ru – это прекрасный вариант найти лучший для вас диагностический центр и оформить заявку на обследование организма, не выходя из дома.</div>
+                </div>
+                <div class="footer__item">
+                    <ul class="footer__list clearfix">
+                        <li class="footer__list-item col"><a href="" class="footer__list-link">О проекте</a>
+                        </li>
+                        <li class="footer__list-item col"><a href="" class="footer__list-link">Страховым агентам</a>
+                        </li>
+                        <li class="footer__list-item col"><a href="" class="footer__list-link">Блог</a>
+                        </li>
+                        <li class="footer__list-item col"><a href="" class="footer__list-link">Контакты</a>
+                        </li>
+                        <li class="footer__list-item col"><a href="to-clinic.html" class="footer__list-link">Клиникам</a>
+                        </li>
+                        <li class="footer__list-item col"><a href="" class="footer__list-link">Пользовательское соглашение</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="contacts">
+                        <div class="contacts__mail">Info@testpuls.ru</div>
+                        <div class="contacts__phone">+7 (499) 705-30-40</div>
+                    </div>
+                    <div class="call-back clearfix">
+                        <div data-toggle="modal" data-target="#call-back-footer" class="call-back__btn">Обратный звонок</div>
+                        <div tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="call-back-footer" class="modal fade">
+                            <div role="document" class="modal-dialog">
+                                <div class="modal-callback modal-content">
+                                    <div class="modal-callback__head">Обратный звонок</div>
+                                    <div class="modal-callback__info clearfix">
+                                        <label for="callback-name" class="modal-callback__label col-12">Ваше имя</label>
+                                        <div class="modal-callback__wrap col-12">
+                                            <input id="callback-name" type="text" placeholder="Ваше имя" class="modal-callback__input" />
+                                        </div>
+                                        <div class="modal-callback__wrap col-12">
+                                            <input type="tel" placeholder="Ваш телефон" class="modal-callback__input" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-callback__time clearfix">
+                                        <label for="callback-name" class="modal-callback__label col-12">Время звонка</label>
+                                        <div class="modal-callback__wrap col-6">
+                                            <input id="callback-name" type="time" class="modal-callback__input modal-callback__input_type_time" />
+                                        </div>
+                                        <div class="modal-callback__wrap modal-callback__wrap_type_dash col-6">
+                                            <input id="callback-name" type="time" class="modal-callback__input modal-callback__input_type_time" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-callback__action">
+                                        <div class="btn-action btn-action_type_green">Заказать обратный звонок</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="static/js/main.js"></script>
+    </body>
+
+</html>

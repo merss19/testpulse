@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>default title</title>
+        <meta content="" name="description" />
+        <meta content="" name="keywords" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta content="telephone=no" name="format-detection" />
+        <meta name="HandheldFriendly" content="true" />
+
+
+        <link href="static/css/main.css" rel="stylesheet" type="text/css">
+
+        <meta property="og:title" content="default title" />
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
+        <meta property="twitter:description" content="" />
+        <link rel="image_src" href="" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="static/css/separate-css/select2.min.css" />
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+    </head>
+
+    <body class="page page-inner">
+        <header class="header">
+            <div class="container clearfix">
+                <div class="header__logo col-4">
+                    <a href="index.html" class="logo clearfix">
+                        <div class="logo__img"></div>
+                        <div class="logo__text">
+                            <div class="logo__title">TESTPULS.RU</div>
+                            <h1 class="logo__desc">Диагностические центры</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__info col-8">
+                    <div class="info clearfix">
+                        <div class="info__item call-back">
+                            <button data-toggle="modal" data-target="#call-back" class="call-back__btn">Обратный звонок</button>
+                            <div tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="call-back" class="modal fade">
+                                <div role="document" class="modal-dialog">
+                                    <div class="modal-callback modal-content">
+                                        <div class="modal-callback__head">Обратный звонок</div>
+                                        <div class="modal-callback__info clearfix">
+                                            <label for="callback-name" class="modal-callback__label col-12">Ваше имя</label>
+                                            <div class="modal-callback__wrap col-12">
+                                                <input id="callback-name" type="text" placeholder="Ваше имя" class="modal-callback__input" />
+                                            </div>
+                                            <div class="modal-callback__wrap col-12">
+                                                <input type="tel" placeholder="Ваш телефон" class="modal-callback__input modal-callback__input_type_phone" />
+                                            </div>
+                                        </div>
+                                        <div class="modal-callback__time clearfix">
+                                            <label for="callback-name" class="modal-callback__label col-12">Время звонка</label>
+                                            <div class="modal-callback__wrap col-6">
+                                                <input id="callback-name" type="time" class="modal-callback__input modal-callback__input_type_time" />
+                                            </div>
+                                            <div class="modal-callback__wrap modal-callback__wrap_type_dash col-6">
+                                                <input id="callback-name" type="time" class="modal-callback__input modal-callback__input_type_time" />
+                                            </div>
+                                        </div>
+                                        <div class="modal-callback__action">
+                                            <div class="btn-action btn-action_type_green">Заказать обратный звонок</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <div class="contacts">
+                                <div class="contacts__mail">Info@testpuls.ru</div>
+                                <div class="contacts__phone">+7 (499) 705-30-40</div>
+                            </div>
+                        </div>
+                        <div class="info__item promo">
+                            <div class="promo__header">245</div>
+                            <div class="promo__desc">
+                                <p>Заявок</p>
+                                <p>за сегодня</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="filter-main">
+            <div class="container">
+                <div class="filter-main__search filter clearfix">
+                    <div class="filter__box filter__box_type_service col-5">
+                        <div class="filter__inner">
+                            <label for="id_label_multiple">
+                                <select multiple="multiple">
+                                    <option>МРТ Головного мозга</option>
+                                    <option>Флюрография</option>
+                                    <option>УЗИ</option>
+                                    <option>МРТ Головного мозга</option>
+                                    <option>Флюрография</option>
+                                    <option>УЗИ</option>
+                                    <option>МРТ Головного мозга</option>
+                                    <option>Флюрография</option>
+                                    <option>УЗИ</option>
+                                    <option>МРТ Головного мозга</option>
+                                    <option>Флюрография</option>
+                                    <option>УЗИ</option>
+                                    <option>МРТ Головного мозга</option>
+                                    <option>Флюрография</option>
+                                    <option>УЗИ</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter__box filter__box_type_location col-5">
+                        <div class="filter__inner"><span class="filter__res">10</span><span class="filter__notice">Выбрано<span class="filter__notice-value">10</span>станций метро</span>
+                            <select class="filter__select">
+                                <option>Китай-город</option>
+                                <option>Библиотека им. Ленина</option>
+                                <option>Полянка</option>
+                                <option>Площадь революции</option>
+                                <option>Аннино</option>
+                                <option>Китай-город</option>
+                                <option>Митино</option>
+                                <option>Динамо</option>
+                                <option>Китай-город</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter__btn col-2">
+                        <button class="btn-action">Найти клинику</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content clearfix">
+                <div class="breadcrumb">
+                    <ul class="breadcrumb__list clearfix">
+                        <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Главная</a>
+                        </li>
+                        <li class="breadcrumb__item"><a href="" class="breadcrumb__link">МРТ шейного отдела</a>
+                        </li>
+                    </ul>
+                </div>
+                <h1 class="content__header">МРТ шейного отдела</h1>
+                <div class="content-block">
+                    <div class="content-block__inner">
+                        <div class="statica">
+                            <div class="statica__item">
+                                <div class="statica__title">Общие сведения об МРТ головногор мозга</div>
+                                <div class="statica__desc">Сервис ТестПульс является прекрасной возможностью расширить список пациентов вашего диагностического центра. Это выражается в ряде преимуществ:</div>
+                                <div class="statica__pic">
+                                    <img src="static/img/assets/statica/statica-1.png" alt="" class="statica__img" />
+                                </div>
+                                <ul class="statica__list list-option">
+                                    <li class="list-option__note">Сервис ТестПульс является прекрасной возможностью расширить список пациентов вашего диагностического центра.</li>
+                                    <li class="list-option__note">Cайт работает в режиме 24/7, благодаря чему каждый посетитель может автоматически стать вашим клиентом, заполнив форму записи на процедуру или обратившись к оператору Call-центра;</li>
+                                    <li class="list-option__note">Наши сотрудники ведут поддержку клиента от момента подачи заявки на диагностику до прихода</li>
+                                    <li class="list-option__note">Информация о потенциальном пациенте поступает в адрес центра диагностики посредством звонка оператора или автоматически;</li>
+                                    <li class="list-option__note">Каждая диагностическая клиника имеет полный доступ к персональной информации и возможность ее изменения;</li>
+                                    <li class="list-option__note">Благодаря системе отзывов и формирования рейтинга диагностических центров, вы легко отследите качество вашей работы;</li>
+                                    <li class="list-option__note">Регистрация на сервисе ТестПульс абсолютно бесплатна.</li>
+                                </ul>
+                            </div>
+                            <div class="statica__item statica__item_type_text">
+                                <div class="statica__title">Где пройти обследование</div>
+                                <p class="statica__text">Магнитно-резонансная томография – метод исследования, с помощью которого специалисты-радиологи получают точную информацию о состоянии органов и тканей человека без внутренних вмешательств. Аппаратом диагностируется организм
+                                    с помощью магнитных полей,поэтому сама процедура полностью безопасна. В процессе диагностики аппарат делает серию снимков в разных проекциях, которые далее обрабатываются специалистом, и делается заключение.</p>
+                                <div class="statica__pic">
+                                    <img src="static/img/assets/statica/statica-2.png" alt="" class="statica__img" />
+                                </div>
+                                <p class="statica__text">Зачем проводится исследование. Данная диагностика считается наиболее информативным методом оценки состояния суставной, костно-мышечной и нервной систем человека. Чаще всего МРТ назначается для выявления нарушений опорно-двигательного
+                                    аппарата, болезней головного мозга или повреждений спинного мозга. Процедура помогает выявить опухоли, нарушения в развитии или нарушения по причине травм. Использование контрастного вещества в разы повышает точность
+                                    диагностики.</p>
+                            </div>
+                            <div class="statica__item statica__item_type_last-text">
+                                <div class="statica__title">Почему это важно</div>
+                                <p class="cstatica__text">Магнитно-резонансная томография – метод исследования, с помощью которого специалисты-радиологи получают точную информацию о состоянии органов и тканей человека без внутренних вмешательств. Аппаратом диагностируется организм
+                                    с помощью магнитных полей, поэтому сама процедура полностью безопасна. В процессе диагностики аппарат делает серию снимков в разных проекциях, которые далее обрабатываются специалистом, и делается заключение.</p>
+                                <p class="statica__text">Магнитно-резонансная томография – метод исследования, с помощью которого специалисты-радиологи получают точную информацию о состоянии органов и тканей человека без внутренних вмешательств. Аппаратом диагностируется организм
+                                    с помощью магнитных полей, поэтому сама процедура полностью безопасна. В процессе диагностики аппарат делает серию снимков в разных проекциях, которые далее обрабатываются специалистом, и делается заключение.</p>
+                            </div>
+                            <div class="statica__item statica__item_type_reviews">
+                                <div class="review">
+                                    <div class="review__user owl-carousel">
+                                        <div class="review__user-item">
+                                            <div class="review__name">Людмила Яковлева</div>
+                                            <div class="review__text">Клиника Нейромонаха Иофана была основана в 1989 году.Еще моя бабушка ходила в эту клинику. В дальнейшем она очень быстро переквалифицировалась в МРТ клинику и проводит обследования в этой сфере. Последний раз,
+                                                когда я ходил в нее - меня встретила грубая девушка на ресепшене - это был единственный минус клиники. В дальнейшем она переквалифицировалась</div>
+                                            <div class="review__btn clearfix">
+                                                <button class="btn-action btn-action_type_review">Записаться в эту клинику</button>
+                                            </div>
+                                        </div>
+                                        <div class="review__user-item">
+                                            <div class="review__name">Людмила Яковлева</div>
+                                            <div class="review__text">Клиника Нейромонаха Иофана была основана в 1989 году.Еще моя бабушка ходила в эту клинику. В дальнейшем она очень быстро переквалифицировалась в МРТ клинику и проводит обследования в этой сфере. Последний раз,
+                                                когда я ходил в нее - меня встретила грубая девушка на ресепшене - это был единственный минус клиники. В дальнейшем она переквалифицировалась</div>
+                                            <div class="review__btn">
+                                                <button class="btn-action btn-action_type_review">Записаться в эту клинику</button>
+                                            </div>
+                                        </div>
+                                        <div class="review__user-item">
+                                            <div class="review__name">Людмила Яковлева</div>
+                                            <div class="review__text">Клиника Нейромонаха Иофана была основана в 1989 году.Еще моя бабушка ходила в эту клинику. В дальнейшем она очень быстро переквалифицировалась в МРТ клинику и проводит обследования в этой сфере. Последний раз,
+                                                когда я ходил в нее - меня встретила грубая девушка на ресепшене - это был единственный минус клиники. В дальнейшем она переквалифицировалась</div>
+                                            <div class="review__btn">
+                                                <button class="btn-action btn-action_type_review">Записаться в эту клинику</button>
+                                            </div>
+                                        </div>
+                                        <div class="review__user-item">
+                                            <div class="review__name">Людмила Яковлева</div>
+                                            <div class="review__text">Клиника Нейромонаха Иофана была основана в 1989 году.Еще моя бабушка ходила в эту клинику. В дальнейшем она очень быстро переквалифицировалась в МРТ клинику и проводит обследования в этой сфере. Последний раз,
+                                                когда я ходил в нее - меня встретила грубая девушка на ресепшене - это был единственный минус клиники. В дальнейшем она переквалифицировалась</div>
+                                            <div class="review__btn">
+                                                <button class="btn-action btn-action_type_review">Записаться в эту клинику</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review__nav clearfix">
+                                        <div class="review__nav-left nav-left"></div>
+                                        <div class="review__nav-right nav-right"></div>
+                                        <div class="review__pagination clearfix">
+                                            <div class="review__pagination-item owl-current">1</div>
+                                            <div class="review__pagination-item owl-sum">10</div>
+                                        </div>
+                                    </div>
+                                    <div class="clinic">
+                                        <div class="clinic__top">
+                                            <div class="clinic__logo">
+                                                <img src="static/img/assets/statica/clinic.png" alt="" class="clinic__img" />
+                                            </div>
+                                            <div class="clinic__desc">Всемирная клиника Нейромонаха Иофана</div>
+                                        </div>
+                                        <div class="clinic__bottom rating">
+                                            <div class="rating__item">
+                                                <div class="rating__value rating__value_type_number">8,5</div>
+                                                <div class="rating__value rating__value_type_desc">Рейтинг пользователя</div>
+                                            </div>
+                                            <div class="rating__item">
+                                                <div class="rating__value rating__value_type_text">Качество</div>
+                                                <div class="rating__value">
+                                                    <div class="stars">
+                                                        <div class="stars__inner">
+                                                            <input type="radio" value="1" name="quality" id="quality1" class="stars__input" />
+                                                            <label for="quality1" class="stars__label"></label>
+                                                            <input type="radio" value="2" name="quality" id="quality2" class="stars__input" />
+                                                            <label for="quality2" class="stars__label"></label>
+                                                            <input type="radio" value="3" name="quality" id="quality3" class="stars__input" />
+                                                            <label for="quality3" class="stars__label"></label>
+                                                            <input type="radio" value="4" name="quality" id="quality4" class="stars__input" />
+                                                            <label for="quality4" class="stars__label"></label>
+                                                            <input type="radio" value="5" name="quality" id="quality5" class="stars__input" />
+                                                            <label for="quality5" class="stars__label"></label>
+                                                            <input type="radio" value="6" name="quality" id="quality6" class="stars__input" />
+                                                            <label for="quality6" class="stars__label"></label>
+                                                            <input type="radio" value="7" name="quality" id="quality7" class="stars__input" />
+                                                            <label for="quality7" class="stars__label"></label>
+                                                            <input type="radio" value="8" name="quality" id="quality8" class="stars__input" />
+                                                            <label for="quality8" class="stars__label"></label>
+                                                            <input type="radio" value="9" name="quality" id="quality9" class="stars__input" />
+                                                            <label for="quality9" class="stars__label"></label>
+                                                            <input type="radio" value="10" name="quality" id="quality10" class="stars__input" />
+                                                            <label for="quality10" class="stars__label"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="rating__item">
+                                                <div class="rating__value rating__value_type_text">Скорость</div>
+                                                <div class="rating__value">
+                                                    <div class="stars">
+                                                        <div class="stars__inner">
+                                                            <input type="radio" value="1" name="speed" id="speed1" class="stars__input" />
+                                                            <label for="speed1" class="stars__label"></label>
+                                                            <input type="radio" value="2" name="speed" id="speed2" class="stars__input" />
+                                                            <label for="speed2" class="stars__label"></label>
+                                                            <input type="radio" value="3" name="speed" id="speed3" class="stars__input" />
+                                                            <label for="speed3" class="stars__label"></label>
+                                                            <input type="radio" value="4" name="speed" id="speed4" class="stars__input" />
+                                                            <label for="speed4" class="stars__label"></label>
+                                                            <input type="radio" value="5" name="speed" id="speed5" class="stars__input" />
+                                                            <label for="speed5" class="stars__label"></label>
+                                                            <input type="radio" value="6" name="speed" id="speed6" class="stars__input" />
+                                                            <label for="speed6" class="stars__label"></label>
+                                                            <input type="radio" value="7" name="speed" id="speed7" class="stars__input" />
+                                                            <label for="speed7" class="stars__label"></label>
+                                                            <input type="radio" value="8" name="speed" id="speed8" class="stars__input" />
+                                                            <label for="speed8" class="stars__label"></label>
+                                                            <input type="radio" value="9" name="speed" id="speed9" class="stars__input" />
+                                                            <label for="speed9" class="stars__label"></label>
+                                                            <input type="radio" value="10" name="speed" id="speed10" class="stars__input" />
+                                                            <label for="speed10" class="stars__label"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="rating__item">
+                                                <div class="rating__value rating__value_type_text">Стоимость</div>
+                                                <div class="rating__value">
+                                                    <div class="stars">
+                                                        <div class="stars__inner">
+                                                            <input type="radio" value="1" name="price" id="price1" class="stars__input" />
+                                                            <label for="price1" class="stars__label"></label>
+                                                            <input type="radio" value="2" name="price" id="price2" class="stars__input" />
+                                                            <label for="price2" class="stars__label"></label>
+                                                            <input type="radio" value="3" name="price" id="price3" class="stars__input" />
+                                                            <label for="price3" class="stars__label"></label>
+                                                            <input type="radio" value="4" name="price" id="price4" class="stars__input" />
+                                                            <label for="price4" class="stars__label"></label>
+                                                            <input type="radio" value="5" name="price" id="price5" class="stars__input" />
+                                                            <label for="price5" class="stars__label"></label>
+                                                            <input type="radio" value="6" name="price" id="price6" class="stars__input" />
+                                                            <label for="price6" class="stars__label"></label>
+                                                            <input type="radio" value="7" name="price" id="price7" class="stars__input" />
+                                                            <label for="price7" class="stars__label"></label>
+                                                            <input type="radio" value="8" name="price" id="price8" class="stars__input" />
+                                                            <label for="price8" class="stars__label"></label>
+                                                            <input type="radio" value="9" name="price" id="price9" class="stars__input" />
+                                                            <label for="price9" class="stars__label"></label>
+                                                            <input type="radio" value="10" name="price" id="price10" class="stars__input" />
+                                                            <label for="price10" class="stars__label"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="statica__item content-block__item_type_articles">
+                                <div class="statica__title">Похожие статьи</div>
+                                <div class="statica__articles articles clearfix">
+                                    <div class="articles__item col-4">
+                                        <div class="articles__pic">
+                                            <img src="static/img/assets/statica/statica-5.png" alt="" class="articles__img" />
+                                        </div>
+                                        <div class="articles__head">Почему мы лучше других медецинских порталов</div>
+                                        <div class="articles__desc">Нет, расуждения о невыданных лекартвах и адовых маленьких городах, да и не только маленьких не демагогия, а следствие. В столице пускают пыль в глаза, делая масштабные, дорогие и неадекватные прожеты, в то время
+                                            как жизненно важные вещи - по фигу, главное - продем</div>
+                                    </div>
+                                    <div class="articles__item col-4">
+                                        <div class="articles__pic">
+                                            <img src="static/img/assets/statica/statica-6.png" alt="" class="articles__img" />
+                                        </div>
+                                        <div class="articles__head">Как скрыть свой истиный возраст с помошью макияжа</div>
+                                        <div class="articles__desc">Нет, расуждения о невыданных лекартвах и адовых маленьких городах, да и не только маленьких не демагогия, а следствие. В столице пускают пыль в глаза, делая масштабные, дорогие и неадекватные прожеты, в то время
+                                            как жизненно важные вещи - по фигу, главное - продем</div>
+                                    </div>
+                                    <div class="articles__item col-4">
+                                        <div class="articles__pic">
+                                            <img src="static/img/assets/statica/statica-7.png" alt="" class="articles__img" />
+                                        </div>
+                                        <div class="articles__head">Лабораторные анализы как способ найти болезни</div>
+                                        <div class="articles__desc">Нет, расуждения о невыданных лекартвах и адовых маленьких городах, да и не только маленьких не демагогия, а следствие. В столице пускают пыль в глаза, делая масштабные, дорогие и неадекватные прожеты, в то время
+                                            как жизненно важные вещи - по фигу, главное - продем</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="statica__social social">
+                                <div class="social clearfix">
+                                    <div class="social__item col-3">
+                                        <div class="social__icon icon-vk"></div>
+                                    </div>
+                                    <div class="social__item col-3">
+                                        <div class="social__icon icon-fb"></div>
+                                    </div>
+                                    <div class="social__item col-3">
+                                        <div class="social__icon icon-ss"></div>
+                                    </div>
+                                    <div class="social__item col-3">
+                                        <div class="social__icon icon-ss"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-block">
+                    <div class="side-block__inner">
+                        <ul class="side-menu">
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#dublex" class="side-menu__link">Дуплексное сканирование</a>
+                                <ul id="dublex" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#kt" class="side-menu__link">КТ (Компьютерная томография) </a>
+                                <ul id="kt" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#topo" class="side-menu__link">ПЭТ-КТ (Позитронно-эмиссионная томография) </a>
+                                <ul id="topo" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#rontgen" class="side-menu__link">Рентген (рентгенография)</a>
+                                <ul id="rontgen" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#uzi" class="side-menu__link">Узи ( ультрозвуковое сканирование)</a>
+                                <ul id="uzi" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#fluo" class="side-menu__link">Флюрография грудной клетки</a>
+                                <ul id="fluo" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#electro" class="side-menu__link">Электронейримография (ЭНМГ)</a>
+                                <ul id="electro" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#endoscopy" class="side-menu__link">Эндоскопия</a>
+                                <ul id="endoscopy" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#diagnostic" class="side-menu__link">Функциональная диагностика</a>
+                                <ul id="diagnostic" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="side-banner">
+                        <div class="side-banner__head">Топ клиник</div>
+                        <div class="side-banner__wrap">
+                            <ul class="side-banner__list owl-carousel">
+                                <li class="side-banner__item">
+                                    <div class="info-box"><a href="filter.html" class="info-box__title">Медецинский центр Георгий Рогоносец</a>
+                                        <div class="info-box__address">г. Москва, Котельническая набережная д.32, к3</div>
+                                        <div class="info-box__metro">
+                                            <div class="metro clearfix">
+                                                <ul class="metro__list clearfix metro-hide">
+                                                    <li class="metro__list-item">
+                                                        <div class="metro__link clearfix"><span class="metro__logo"></span><span class="metro__item">Китай-город</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="metro__list-item">
+                                                        <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_red"></span><span class="metro__item">Китай-город</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="metro__list-item">
+                                                        <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_bordo"></span><span class="metro__item">Китай-город</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="metro__list-item">
+                                                        <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_orange"></span><span class="metro__item">Китай-город</span>
+                                                        </div>
+                                                    </li>
+                                                </ul><a class="metro__more">Еще<span class="metro__more-amount">4</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="side-banner__item">
+                                    <div class="info-box"><a href="filter.html" class="info-box__title">Медецинский центр Георгий Рогоносец</a>
+                                        <div class="info-box__address">г. Москва, Котельническая набережная д.32, к3</div>
+                                        <div class="info-box__metro">
+                                            <div class="metro clearfix">
+                                                <ul class="metro__list clearfix metro-hide">
+                                                    <li class="metro__list-item">
+                                                        <div class="metro__link clearfix"><span class="metro__logo"></span><span class="metro__item">Китай-город</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="metro__list-item">
+                                                        <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_red"></span><span class="metro__item">Китай-город</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="metro__list-item">
+                                                        <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_bordo"></span><span class="metro__item">Китай-город</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="metro__list-item">
+                                                        <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_orange"></span><span class="metro__item">Китай-город</span>
+                                                        </div>
+                                                    </li>
+                                                </ul><a class="metro__more">Еще<span class="metro__more-amount">4</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="side-banner__nav">
+                                <div class="side-banner__nav-left nav-left"></div>
+                                <div class="side-banner__nav-right nav-right"></div>
+                                <div class="side-banner__pagination clearfix">
+                                    <div class="side-banner__pagination-item owl-current">1</div>
+                                    <div class="side-banner__pagination-item owl-sum"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container clearfix">
+                <div class="footer__item">
+                    <a href="index.html" class="logo clearfix">
+                        <div class="logo__img"></div>
+                        <div class="logo__text">
+                            <div class="logo__title">TESTPULS.RU</div>
+                            <h1 class="logo__desc">Диагностические центры</h1>
+                        </div>
+                    </a>
+                    <div class="footer__desc clearfix">Портал testpuls.ru – это прекрасный вариант найти лучший для вас диагностический центр и оформить заявку на обследование организма, не выходя из дома.</div>
+                </div>
+                <div class="footer__item">
+                    <ul class="footer__list clearfix">
+                        <li class="footer__list-item col"><a href="" class="footer__list-link">О проекте</a>
+                        </li>
+                        <li class="footer__list-item col"><a href="" class="footer__list-link">Страховым агентам</a>
+                        </li>
+                        <li class="footer__list-item col"><a href="" class="footer__list-link">Блог</a>
+                        </li>
+                        <li class="footer__list-item col"><a href="" class="footer__list-link">Контакты</a>
+                        </li>
+                        <li class="footer__list-item col"><a href="to-clinic.html" class="footer__list-link">Клиникам</a>
+                        </li>
+                        <li class="footer__list-item col"><a href="" class="footer__list-link">Пользовательское соглашение</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="contacts">
+                        <div class="contacts__mail">Info@testpuls.ru</div>
+                        <div class="contacts__phone">+7 (499) 705-30-40</div>
+                    </div>
+                    <div class="call-back clearfix">
+                        <div data-toggle="modal" data-target="#call-back-footer" class="call-back__btn">Обратный звонок</div>
+                        <div tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="call-back-footer" class="modal fade">
+                            <div role="document" class="modal-dialog">
+                                <div class="modal-callback modal-content">
+                                    <div class="modal-callback__head">Обратный звонок</div>
+                                    <div class="modal-callback__info clearfix">
+                                        <label for="callback-name" class="modal-callback__label col-12">Ваше имя</label>
+                                        <div class="modal-callback__wrap col-12">
+                                            <input id="callback-name" type="text" placeholder="Ваше имя" class="modal-callback__input" />
+                                        </div>
+                                        <div class="modal-callback__wrap col-12">
+                                            <input type="tel" placeholder="Ваш телефон" class="modal-callback__input modal-callback__input_type_phone" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-callback__time clearfix">
+                                        <label for="callback-name" class="modal-callback__label col-12">Время звонка</label>
+                                        <div class="modal-callback__wrap col-6">
+                                            <input id="callback-name" type="time" class="modal-callback__input modal-callback__input_type_time" />
+                                        </div>
+                                        <div class="modal-callback__wrap modal-callback__wrap_type_dash col-6">
+                                            <input id="callback-name" type="time" class="modal-callback__input modal-callback__input_type_time" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-callback__action">
+                                        <div class="btn-action btn-action_type_green">Заказать обратный звонок</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="static/js/main.js"></script>
+    </body>
+
+</html>

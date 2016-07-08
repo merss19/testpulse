@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>default title</title>
+        <meta content="" name="description" />
+        <meta content="" name="keywords" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta content="telephone=no" name="format-detection" />
+        <meta name="HandheldFriendly" content="true" />
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <meta property="og:title" content="default title" />
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
+        <meta property="twitter:description" content="" />
+        <link rel="image_src" href="" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="static/css/separate-css/select2.min.css" />
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+    </head>
+
+    <body class="page page-inner">
+        <header class="header">
+            <div class="container clearfix">
+                <div class="header__logo col-4">
+                    <a href="index.html" class="logo clearfix">
+                        <div class="logo__img"></div>
+                        <div class="logo__text">
+                            <div class="logo__title">TESTPULS.RU</div>
+                            <h1 class="logo__desc">Диагностические центры</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__info col-8">
+                    <div class="info clearfix">
+                        <div class="info__item call-back">
+                            <button data-toggle="modal" data-target="#call-back" class="call-back__btn">Обратный звонок</button>
+                            <div tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="call-back" class="modal fade">
+                                <div role="document" class="modal-dialog">
+                                    <div class="modal-callback modal-content">
+                                        <div class="modal-callback__head">Обратный звонок</div>
+                                        <div class="modal-callback__info clearfix">
+                                            <label for="callback-name" class="modal-callback__label col-12">Ваше имя</label>
+                                            <div class="modal-callback__wrap col-12">
+                                                <input id="callback-name" type="text" placeholder="Ваше имя" class="modal-callback__input" />
+                                            </div>
+                                            <div class="modal-callback__wrap col-12">
+                                                <input type="tel" placeholder="Ваш телефон" class="modal-callback__input" />
+                                            </div>
+                                        </div>
+                                        <div class="modal-callback__time clearfix">
+                                            <label for="callback-name" class="modal-callback__label col-12">Время звонка</label>
+                                            <div class="modal-callback__wrap col-6">
+                                                <input id="callback-name" type="time" class="modal-callback__input modal-callback__input_type_time" />
+                                            </div>
+                                            <div class="modal-callback__wrap modal-callback__wrap_type_dash col-6">
+                                                <input id="callback-name" type="time" class="modal-callback__input modal-callback__input_type_time" />
+                                            </div>
+                                        </div>
+                                        <div class="modal-callback__action">
+                                            <div class="btn-action btn-action_type_green">Заказать обратный звонок</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <div class="contacts">
+                                <div class="contacts__mail">Info@testpuls.ru</div>
+                                <div class="contacts__phone">+7 (499) 705-30-40</div>
+                            </div>
+                        </div>
+                        <div class="info__item promo">
+                            <div class="promo__header">245</div>
+                            <div class="promo__desc">
+                                <p>Заявок</p>
+                                <p>за сегодня</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="filter-main">
+            <div class="container">
+                <div class="filter-main__search filter clearfix">
+                    <div class="filter__box filter__box_type_service col-5">
+                        <div class="filter__inner">
+                            <label for="id_label_multiple">
+                                <select multiple="multiple">
+                                    <option>МРТ Головного мозга</option>
+                                    <option>Флюрография</option>
+                                    <option>УЗИ</option>
+                                    <option>МРТ Головного мозга</option>
+                                    <option>Флюрография</option>
+                                    <option>УЗИ</option>
+                                    <option>МРТ Головного мозга</option>
+                                    <option>Флюрография</option>
+                                    <option>УЗИ</option>
+                                    <option>МРТ Головного мозга</option>
+                                    <option>Флюрография</option>
+                                    <option>УЗИ</option>
+                                    <option>МРТ Головного мозга</option>
+                                    <option>Флюрография</option>
+                                    <option>УЗИ</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter__box filter__box_type_location col-5">
+                        <div class="filter__inner">
+                            <select class="filter__select">
+                                <option>Китай-город</option>
+                                <option>Библиотека им. Ленина</option>
+                                <option>Китай-город</option>
+                                <option>Китай-город</option>
+                                <option>Библиотека им. Ленина</option>
+                                <option>Китай-город</option>
+                                <option>Китай-город</option>
+                                <option>Библиотека им. Ленина</option>
+                                <option>Китай-город</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter__btn col-2">
+                        <button class="btn-action">Найти клинику</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content clearfix">
+                <div class="breadcrumb">
+                    <ul class="breadcrumb__list clearfix">
+                        <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Главная</a>
+                        </li>
+                        <li class="breadcrumb__item"><a href="" class="breadcrumb__link">МРТ шейного отдела</a>
+                        </li>
+                        <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Выбор клиники</a>
+                        </li>
+                        <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Медецинский центр ПАТЕРО КЛИНИК</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-block">
+                    <div class="clinic-info clearfix">
+                        <div class="clinic-info__record block-record">
+                            <div class="block-record__logo">
+                                <img src="static/img/assets/clinic-info/logo-cli.png" alt="" />
+                            </div>
+                            <div class="block-record__text">Запишитесь по телефону</div>
+                            <div class="block-record__phone">+7 (499) 705-30-40</div>
+                            <div class="block-record__notice">или онлайн</div>
+                            <div class="block-record__action">
+                                <div class="btn-action btn-action_type_green">Записаться в клинику</div>
+                            </div>
+                        </div>
+                        <div class="clinic-info__desc clinic-desc">
+                            <div class="clinic-desc__head">Медецинский центр
+                                <div class="uppercase">ПАТЕРО КЛИНИК</div>
+                            </div>
+                            <p class="clinic-desc__text toggle-list">Медицинский центр АвроМед - это многопрофильное лечебно-диагностическое учреждение Москвы. Находиться АвроМед по адресу: улица Толбухина, дом 13, корпус 3, что в нескольких минутах ходьбы от станций метро Кунцевская, Молодежная
+                                и Словянский Бульвар. Пациенты медицинского центра АвроМед могут воспользоваться такими услугами, как: проведение всех видов медицинских анализов;диагностика и лечение по таким направлениям, как: аллергология, андрология,
+                                анестезиология, реаниматология, гастроэнтерология, гинекология и гинекологическая хирургия, дерматология, иммунология, кардиология, косметология, маммология, неврология, онкология, оториноларингология, офтальмология, пластическая
+                                хирургия, проктология, ревматология, стоматология, терапия, травматология, ортопедия, урология, флебология, хирургия и диетология; проведение УЗИ, ЭЭГ, ЭхоКГ. Преимуществами медицинского центра АвроМед является многопрофильность
+                                предоставляемых услуг, возможность для пациентов записываться на прием к специалистам на официальном сайте клиники, или по телефону, а также доступные цены на диагностику и лечение, и наличие различных скидок и акций. Гарантии
+                                медицинского центра АвроМед: специалисты центра являются кандидатами и докторами медицинских наук, а также врачами высшей квалификационной категории.</p><a class="clinic-desc__link main-link">Читать полностью</a>
+                            <div class="clinic-desc__schedule table">
+                                <div class="table-row">
+                                    <div class="clinic-desc__schedule-item table-cell">Понедельник - Пятница</div>
+                                    <div class="clinic-desc__schedule-item table-cell">c 09:00 до 22:00</div>
+                                </div>
+                                <div class="table-row">
+                                    <div class="clinic-desc__schedule-item table-cell">Суббота</div>
+                                    <div class="clinic-desc__schedule-item table-cell">c 09:00 до 22:00</div>
+                                </div>
+                                <div class="table-row">
+                                    <div class="clinic-desc__schedule-item table-cell">Воскресенье</div>
+                                    <div class="clinic-desc__schedule-item table-cell">Выходной</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clinic-banner">
+                        <div class="clinic-banner__body">
+                            <div class="clinic-banner__top clearfix">
+                                <div class="clinic-banner__head">МРТ (магнитно-резонансная томография) головного мозга</div><a href="" class="clinic-banner__params">Дополнительные параметры</a>
+                            </div>
+                            <div class="clinic-banner__boxes clinic-box clearfix">
+                                <div class="clinic-box__item col-3">
+                                    <input id="box-1" type="checkbox" class="clinic-box__input" />
+                                    <label for="box-1" class="clinic-box__label">C контрастом</label>
+                                </div>
+                                <div class="clinic-box__item col-3">
+                                    <input id="box-2" type="checkbox" class="clinic-box__input" />
+                                    <label for="box-2" class="clinic-box__label">Акции ночью</label>
+                                </div>
+                                <div class="clinic-box__item col-3">
+                                    <input id="box-3" type="checkbox" class="clinic-box__input" />
+                                    <label for="box-3" class="clinic-box__label">Запись на флешку</label>
+                                </div>
+                                <div class="clinic-box__item col-3">
+                                    <input id="box-4" type="checkbox" class="clinic-box__input" />
+                                    <label for="box-4" class="clinic-box__label">Запись на CD</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clinic-banner__bottom clearfix">
+                            <div class="clinic-banner__action">
+                                <button class="btn-add">Записаться на услугу</button>
+                            </div>
+                            <div class="clinic-banner__price clearfix">
+                                <div class="clinic-banner__price-text">Цена за процедуру:</div>
+                                <div class="clinic-banner__price-value">2340 руб</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clinic-price">
+                        <div class="clinic-price__head">Прайс лист на остальные услуги МРТ (магнитно-резонансная томография)</div>
+                        <div class="clinic-price__table">
+                            <div class="price-table table">
+                                <div class="price-table__item table-row">
+                                    <div class="price-table__name table-cell">МРТ шейного отдела</div>
+                                    <div class="price-table__night table-cell">130 руб.</div>
+                                    <div class="price-table__day table-cell">230 руб.</div>
+                                </div>
+                                <div class="price-table__item table-row">
+                                    <div class="price-table__name table-cell">МРТ шейного отдела</div>
+                                    <div class="price-table__night table-cell">130 руб.</div>
+                                    <div class="price-table__day table-cell">230 руб.</div>
+                                </div>
+                                <div class="price-table__item table-row">
+                                    <div class="price-table__name table-cell">МРТ шейного отдела</div>
+                                    <div class="price-table__night table-cell">130 руб.</div>
+                                    <div class="price-table__day table-cell">230 руб.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-block">
+                    <div class="side-block__inner">
+                        <div class="side-contacts">
+                            <a class="side-contacts__map">
+                                <img src="static/img/assets/side-contacts/side-map.png" alt="" />
+                            </a>
+                            <div class="side-contacts__box">
+                                <div class="side-contacts__link"><a class="main-link">г. Москва, Котельническая набережная имени ломоносова д.32, к3</a>
+                                </div>
+                                <div class="metro clearfix">
+                                    <ul class="metro__list clearfix">
+                                        <li class="metro__list-item">
+                                            <div class="metro__link clearfix"><span class="metro__logo"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                        <li class="metro__list-item hide">
+                                            <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_red"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                        <li class="metro__list-item hide">
+                                            <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_bordo"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                        <li class="metro__list-item hide">
+                                            <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_orange"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                    </ul><a class="metro__more">Еще станции<span class="metro__more-amount">4</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-block__inner">
+                        <ul class="side-menu">
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#dublex" class="side-menu__link">Дуплексное сканирование</a>
+                                <ul id="dublex" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#kt" class="side-menu__link">КТ (Компьютерная томография) </a>
+                                <ul id="kt" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#topo" class="side-menu__link">ПЭТ-КТ (Позитронно-эмиссионная томография) </a>
+                                <ul id="topo" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#rontgen" class="side-menu__link">Рентген (рентгенография)</a>
+                                <ul id="rontgen" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#uzi" class="side-menu__link">Узи ( ультрозвуковое сканирование)</a>
+                                <ul id="uzi" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#fluo" class="side-menu__link">Флюрография грудной клетки</a>
+                                <ul id="fluo" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#electro" class="side-menu__link">Электронейримография (ЭНМГ)</a>
+                                <ul id="electro" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#endoscopy" class="side-menu__link">Эндоскопия</a>
+                                <ul id="endoscopy" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu__item"><a role="button" data-toggle="collapse" href="#diagnostic" class="side-menu__link">Функциональная диагностика</a>
+                                <ul id="diagnostic" class="side-menu__sub-list collapse">
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                    <li class="side-menu__sub-item"><a class="side-menu__sub-link">Дуплексное сканирование</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clinic-line">
+            <div class="container">
+                <div class="clinic-line__head">Лучшие клиники Москвы и
+                    <div class="main-link">Московской области</div>
+                </div>
+                <ul class="clinic-line__list clearfix">
+                    <li class="clinic-line__item">
+                        <div class="info-box"><a href="filter.html" class="info-box__title">Медецинский центр Георгий Рогоносец</a>
+                            <div class="info-box__address">г. Москва, Котельническая набережная д.32, к3</div>
+                            <div class="info-box__metro">
+                                <div class="metro clearfix">
+                                    <ul class="metro__list clearfix">
+                                        <li class="metro__list-item">
+                                            <div class="metro__link clearfix"><span class="metro__logo"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                        <li class="metro__list-item hide">
+                                            <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_red"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                        <li class="metro__list-item hide">
+                                            <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_bordo"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                        <li class="metro__list-item hide">
+                                            <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_orange"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                    </ul><a class="metro__more">Еще<span class="metro__more-amount">4</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clinic-line__item">
+                        <div class="info-box"><a href="filter.html" class="info-box__title">Медецинский центр Георгий Рогоносец</a>
+                            <div class="info-box__address">г. Москва, Котельническая набережная д.32, к3</div>
+                            <div class="info-box__metro">
+                                <div class="metro clearfix">
+                                    <ul class="metro__list clearfix">
+                                        <li class="metro__list-item">
+                                            <div class="metro__link clearfix"><span class="metro__logo"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                        <li class="metro__list-item hide">
+                                            <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_red"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                        <li class="metro__list-item hide">
+                                            <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_bordo"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                        <li class="metro__list-item hide">
+                                            <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_orange"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                    </ul><a class="metro__more">Еще<span class="metro__more-amount">4</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clinic-line__item">
+                        <div class="info-box"><a href="filter.html" class="info-box__title">Медецинский центр Георгий Рогоносец</a>
+                            <div class="info-box__address">г. Москва, Котельническая набережная д.32, к3</div>
+                            <div class="info-box__metro">
+                                <div class="metro clearfix">
+                                    <ul class="metro__list clearfix">
+                                        <li class="metro__list-item">
+                                            <div class="metro__link clearfix"><span class="metro__logo"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                        <li class="metro__list-item hide">
+                                            <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_red"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                        <li class="metro__list-item hide">
+                                            <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_bordo"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                        <li class="metro__list-item hide">
+                                            <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_orange"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                    </ul><a class="metro__more">Еще<span class="metro__more-amount">4</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clinic-line__item">
+                        <div class="info-box"><a href="filter.html" class="info-box__title">Медецинский центр Георгий Рогоносец</a>
+                            <div class="info-box__address">г. Москва, Котельническая набережная д.32, к3</div>
+                            <div class="info-box__metro">
+                                <div class="metro clearfix">
+                                    <ul class="metro__list clearfix">
+                                        <li class="metro__list-item">
+                                            <div class="metro__link clearfix"><span class="metro__logo"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                        <li class="metro__list-item hide">
+                                            <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_red"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                        <li class="metro__list-item hide">
+                                            <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_bordo"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                        <li class="metro__list-item hide">
+                                            <div class="metro__link clearfix"><span class="metro__logo metro__logo_color_orange"></span><span class="metro__item">Китай-город</span>
+                                            </div>
+                                        </li>
+                                    </ul><a class="metro__more">Еще<span class="metro__more-amount">4</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container clearfix">
+                <div class="footer__item">
+                    <a href="index.html" class="logo clearfix">
+                        <div class="logo__img"></div>
+                        <div class="logo__text">
+                            <div class="logo__title">TESTPULS.RU</div>
+                            <h1 class="logo__desc">Диагностические центры</h1>
+                        </div>
+                    </a>
+                    <div class="footer__desc clearfix">Портал testpuls.ru – это прекрасный вариант найти лучший для вас диагностический центр и оформить заявку на обследование организма, не выходя из дома.</div>
+                </div>
+                <div class="footer__item">
+                    <ul class="footer__list clearfix">
+                        <li class="footer__list-item col"><a href="" class="footer__list-link">О проекте</a>
+                        </li>
+                        <li class="footer__list-item col"><a href="" class="footer__list-link">Страховым агентам</a>
+                        </li>
+                        <li class="footer__list-item col"><a href="" class="footer__list-link">Блог</a>
+                        </li>
+                        <li class="footer__list-item col"><a href="" class="footer__list-link">Контакты</a>
+                        </li>
+                        <li class="footer__list-item col"><a href="to-clinic.html" class="footer__list-link">Клиникам</a>
+                        </li>
+                        <li class="footer__list-item col"><a href="" class="footer__list-link">Пользовательское соглашение</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="contacts">
+                        <div class="contacts__mail">Info@testpuls.ru</div>
+                        <div class="contacts__phone">+7 (499) 705-30-40</div>
+                    </div>
+                    <div class="call-back clearfix">
+                        <div data-toggle="modal" data-target="#call-back-footer" class="call-back__btn">Обратный звонок</div>
+                        <div tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="call-back-footer" class="modal fade">
+                            <div role="document" class="modal-dialog">
+                                <div class="modal-callback modal-content">
+                                    <div class="modal-callback__head">Обратный звонок</div>
+                                    <div class="modal-callback__info clearfix">
+                                        <label for="callback-name" class="modal-callback__label col-12">Ваше имя</label>
+                                        <div class="modal-callback__wrap col-12">
+                                            <input id="callback-name" type="text" placeholder="Ваше имя" class="modal-callback__input" />
+                                        </div>
+                                        <div class="modal-callback__wrap col-12">
+                                            <input type="tel" placeholder="Ваш телефон" class="modal-callback__input" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-callback__time clearfix">
+                                        <label for="callback-name" class="modal-callback__label col-12">Время звонка</label>
+                                        <div class="modal-callback__wrap col-6">
+                                            <input id="callback-name" type="time" class="modal-callback__input modal-callback__input_type_time" />
+                                        </div>
+                                        <div class="modal-callback__wrap modal-callback__wrap_type_dash col-6">
+                                            <input id="callback-name" type="time" class="modal-callback__input modal-callback__input_type_time" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-callback__action">
+                                        <div class="btn-action btn-action_type_green">Заказать обратный звонок</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="static/js/main.js"></script>
+    </body>
+
+</html>
