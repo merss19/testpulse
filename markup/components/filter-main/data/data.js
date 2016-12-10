@@ -9,9 +9,11 @@
 /* Module data example */
 
 filter: {
-    big: {
-        title: 'Hello world',
-            age: 10,
-            button: false
+    {
+        "price": "4800 руб",
+        "text": "Смеситель Grohe Eurosmart 33300001 для ванны с душем",
+        "country": "Германия",
+        "code": "573820",
+        "preview": "assets/images/products/faucet-1.png"
     }
 }
